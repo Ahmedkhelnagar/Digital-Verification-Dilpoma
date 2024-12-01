@@ -1,0 +1,673 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /fifo_top/DUT/sva_inst
+=== Design Unit: work.fifo_sva
+=================================================================================
+
+Assertion Coverage:
+    Assertions                      22        22         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/fifo_top/DUT/sva_inst/assert__rd_ptr_p
+                     fifo_sva.sv(119)                   0          1
+/fifo_top/DUT/sva_inst/assert__wr_ptr_p
+                     fifo_sva.sv(118)                   0          1
+/fifo_top/DUT/sva_inst/assert__same_count_p
+                     fifo_sva.sv(104)                   0          1
+/fifo_top/DUT/sva_inst/assert__dec_count_p
+                     fifo_sva.sv(103)                   0          1
+/fifo_top/DUT/sva_inst/assert__inc_count_p
+                     fifo_sva.sv(102)                   0          1
+/fifo_top/DUT/sva_inst/assert__almostempty_0_p
+                     fifo_sva.sv(88)                    0          1
+/fifo_top/DUT/sva_inst/assert__almostempty_1_p
+                     fifo_sva.sv(87)                    0          1
+/fifo_top/DUT/sva_inst/assert__empty_0_p
+                     fifo_sva.sv(76)                    0          1
+/fifo_top/DUT/sva_inst/assert__empty_1_p
+                     fifo_sva.sv(75)                    0          1
+/fifo_top/DUT/sva_inst/assert__almostfull_0_p
+                     fifo_sva.sv(64)                    0          1
+/fifo_top/DUT/sva_inst/assert__almostfull_1_p
+                     fifo_sva.sv(63)                    0          1
+/fifo_top/DUT/sva_inst/assert__full_0_p
+                     fifo_sva.sv(52)                    0          1
+/fifo_top/DUT/sva_inst/assert__full_1_p
+                     fifo_sva.sv(51)                    0          1
+/fifo_top/DUT/sva_inst/assert__wr_ack_0_p
+                     fifo_sva.sv(37)                    0          1
+/fifo_top/DUT/sva_inst/assert__wr_ack_1_p
+                     fifo_sva.sv(36)                    0          1
+/fifo_top/DUT/sva_inst/assert__underflow_0_p
+                     fifo_sva.sv(25)                    0          1
+/fifo_top/DUT/sva_inst/assert__underflow_1_p
+                     fifo_sva.sv(24)                    0          1
+/fifo_top/DUT/sva_inst/assert__overflow_0_p
+                     fifo_sva.sv(13)                    0          1
+/fifo_top/DUT/sva_inst/assert__overflow_1_p
+                     fifo_sva.sv(12)                    0          1
+/fifo_top/DUT/sva_inst/rst_co_assert
+                     fifo_sva.sv(125)                   0          1
+/fifo_top/DUT/sva_inst/rst_wr_assert
+                     fifo_sva.sv(126)                   0          1
+/fifo_top/DUT/sva_inst/rst_rd_assert
+                     fifo_sva.sv(127)                   0          1
+
+Directive Coverage:
+    Directives                      19        19         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/fifo_top/DUT/sva_inst/cover__rd_ptr_p   fifo_sva Verilog  SVA  fifo_sva.sv(121) 288 Covered   
+/fifo_top/DUT/sva_inst/cover__wr_ptr_p   fifo_sva Verilog  SVA  fifo_sva.sv(120) 517 Covered   
+/fifo_top/DUT/sva_inst/cover__same_count_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(107) 111 Covered   
+/fifo_top/DUT/sva_inst/cover__dec_count_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(106)  88 Covered   
+/fifo_top/DUT/sva_inst/cover__inc_count_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(105) 399 Covered   
+/fifo_top/DUT/sva_inst/cover__almostempty_0_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(90) 2893 Covered   
+/fifo_top/DUT/sva_inst/cover__almostempty_1_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(89)   56 Covered   
+/fifo_top/DUT/sva_inst/cover__empty_0_p  fifo_sva Verilog  SVA  fifo_sva.sv(78) 1922 Covered   
+/fifo_top/DUT/sva_inst/cover__empty_1_p  fifo_sva Verilog  SVA  fifo_sva.sv(77) 1079 Covered   
+/fifo_top/DUT/sva_inst/cover__almostfull_0_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(66) 2702 Covered   
+/fifo_top/DUT/sva_inst/cover__almostfull_1_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(65)  299 Covered   
+/fifo_top/DUT/sva_inst/cover__full_0_p   fifo_sva Verilog  SVA  fifo_sva.sv(54)  554 Covered   
+/fifo_top/DUT/sva_inst/cover__full_1_p   fifo_sva Verilog  SVA  fifo_sva.sv(53) 1154 Covered   
+/fifo_top/DUT/sva_inst/cover__wr_ack_0_p fifo_sva Verilog  SVA  fifo_sva.sv(39) 1138 Covered   
+/fifo_top/DUT/sva_inst/cover__wr_ack_1_p fifo_sva Verilog  SVA  fifo_sva.sv(38)  517 Covered   
+/fifo_top/DUT/sva_inst/cover__underflow_0_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(27)  288 Covered   
+/fifo_top/DUT/sva_inst/cover__underflow_1_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(26)  975 Covered   
+/fifo_top/DUT/sva_inst/cover__overflow_0_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(15)  517 Covered   
+/fifo_top/DUT/sva_inst/cover__overflow_1_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(14) 1138 Covered   
+
+=================================================================================
+=== Instance: /fifo_main_sequence_pkg
+=== Design Unit: work.fifo_main_sequence_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       3         3         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/fifo_main_sequence_pkg/fifo_main_sequence/body/#ublk#124017991#18/immed__29
+                     fifo_main_sequence.sv(29)          0          1
+/fifo_main_sequence_pkg/fifo_main_sequence/body/#ublk#124017991#33/immed__38
+                     fifo_main_sequence.sv(38)          0          1
+/fifo_main_sequence_pkg/fifo_main_sequence/body/#ublk#124017991#42/immed__46
+                     fifo_main_sequence.sv(46)          0          1
+
+=================================================================================
+=== Instance: /fifo_coverage_collector_pkg
+=== Design Unit: work.fifo_coverage_collector_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    93.75%
+        Coverpoints/Crosses         18        na        na        na
+            Covergroup Bins        140       131         9    93.57%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /fifo_coverage_collector_pkg/fifo_coverage_collector/cov 
+                                                       93.75%        100          -    Uncovered            
+    covered/total bins:                                   131        140          -                      
+    missing/total bins:                                     9        140          -                      
+    % Hit:                                             93.57%        100          -                      
+    Coverpoint data_in_cvp                            100.00%        100          -    Covered              
+        covered/total bins:                                64         64          -                      
+        missing/total bins:                                 0         64          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0:1023]                                   46          1          -    Covered              
+        bin auto[1024:2047]                                44          1          -    Covered              
+        bin auto[2048:3071]                                46          1          -    Covered              
+        bin auto[3072:4095]                                48          1          -    Covered              
+        bin auto[4096:5119]                                62          1          -    Covered              
+        bin auto[5120:6143]                                39          1          -    Covered              
+        bin auto[6144:7167]                                49          1          -    Covered              
+        bin auto[7168:8191]                                61          1          -    Covered              
+        bin auto[8192:9215]                                46          1          -    Covered              
+        bin auto[9216:10239]                               32          1          -    Covered              
+        bin auto[10240:11263]                              43          1          -    Covered              
+        bin auto[11264:12287]                              42          1          -    Covered              
+        bin auto[12288:13311]                              45          1          -    Covered              
+        bin auto[13312:14335]                              41          1          -    Covered              
+        bin auto[14336:15359]                              56          1          -    Covered              
+        bin auto[15360:16383]                              34          1          -    Covered              
+        bin auto[16384:17407]                              46          1          -    Covered              
+        bin auto[17408:18431]                              47          1          -    Covered              
+        bin auto[18432:19455]                              53          1          -    Covered              
+        bin auto[19456:20479]                              38          1          -    Covered              
+        bin auto[20480:21503]                              38          1          -    Covered              
+        bin auto[21504:22527]                              55          1          -    Covered              
+        bin auto[22528:23551]                              56          1          -    Covered              
+        bin auto[23552:24575]                              52          1          -    Covered              
+        bin auto[24576:25599]                              42          1          -    Covered              
+        bin auto[25600:26623]                              52          1          -    Covered              
+        bin auto[26624:27647]                              35          1          -    Covered              
+        bin auto[27648:28671]                              51          1          -    Covered              
+        bin auto[28672:29695]                              45          1          -    Covered              
+        bin auto[29696:30719]                              43          1          -    Covered              
+        bin auto[30720:31743]                              47          1          -    Covered              
+        bin auto[31744:32767]                              59          1          -    Covered              
+        bin auto[32768:33791]                              56          1          -    Covered              
+        bin auto[33792:34815]                              43          1          -    Covered              
+        bin auto[34816:35839]                              42          1          -    Covered              
+        bin auto[35840:36863]                              52          1          -    Covered              
+        bin auto[36864:37887]                              47          1          -    Covered              
+        bin auto[37888:38911]                              45          1          -    Covered              
+        bin auto[38912:39935]                              53          1          -    Covered              
+        bin auto[39936:40959]                              25          1          -    Covered              
+        bin auto[40960:41983]                              48          1          -    Covered              
+        bin auto[41984:43007]                              49          1          -    Covered              
+        bin auto[43008:44031]                              42          1          -    Covered              
+        bin auto[44032:45055]                              43          1          -    Covered              
+        bin auto[45056:46079]                              48          1          -    Covered              
+        bin auto[46080:47103]                              46          1          -    Covered              
+        bin auto[47104:48127]                              48          1          -    Covered              
+        bin auto[48128:49151]                              58          1          -    Covered              
+        bin auto[49152:50175]                              45          1          -    Covered              
+        bin auto[50176:51199]                              51          1          -    Covered              
+        bin auto[51200:52223]                              48          1          -    Covered              
+        bin auto[52224:53247]                              54          1          -    Covered              
+        bin auto[53248:54271]                              46          1          -    Covered              
+        bin auto[54272:55295]                              55          1          -    Covered              
+        bin auto[55296:56319]                              48          1          -    Covered              
+        bin auto[56320:57343]                              59          1          -    Covered              
+        bin auto[57344:58367]                              42          1          -    Covered              
+        bin auto[58368:59391]                              35          1          -    Covered              
+        bin auto[59392:60415]                              48          1          -    Covered              
+        bin auto[60416:61439]                              43          1          -    Covered              
+        bin auto[61440:62463]                              51          1          -    Covered              
+        bin auto[62464:63487]                              47          1          -    Covered              
+        bin auto[63488:64511]                              48          1          -    Covered              
+        bin auto[64512:65535]                              43          1          -    Covered              
+    Coverpoint rst_n_cvp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                        52          1          -    Covered              
+        bin auto[1]                                      2949          1          -    Covered              
+    Coverpoint wr_en_cvp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1293          1          -    Covered              
+        bin auto[1]                                      1708          1          -    Covered              
+    Coverpoint rd_en_cvp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1691          1          -    Covered              
+        bin auto[1]                                      1310          1          -    Covered              
+    Coverpoint wr_ack_cvp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      2473          1          -    Covered              
+        bin auto[1]                                       528          1          -    Covered              
+    Coverpoint overflow_cvp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1847          1          -    Covered              
+        bin auto[1]                                      1154          1          -    Covered              
+    Coverpoint full_cvp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1712          1          -    Covered              
+        bin auto[1]                                      1289          1          -    Covered              
+    Coverpoint empty_cvp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1957          1          -    Covered              
+        bin auto[1]                                      1044          1          -    Covered              
+    Coverpoint almostfull_cvp                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      2694          1          -    Covered              
+        bin auto[1]                                       307          1          -    Covered              
+    Coverpoint almostempty_cvp                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      2943          1          -    Covered              
+        bin auto[1]                                        58          1          -    Covered              
+    Coverpoint underflow_cvp                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      2010          1          -    Covered              
+        bin auto[1]                                       991          1          -    Covered              
+    Cross CR_full                                      75.00%        100          -    Uncovered            
+        covered/total bins:                                 6          8          -                      
+        missing/total bins:                                 2          8          -                      
+        % Hit:                                         75.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[0],auto[1]>                1216          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                  73          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                 213          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1097          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                 279          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 123          1          -    Covered              
+            bin <*,auto[1],auto[1]>                         0          1          2    ZERO                 
+    Cross CR_almostfull                               100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                 146          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                  42          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                  55          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                  64          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                  67          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1055          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                1440          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 132          1          -    Covered              
+    Cross CR_almostempty                               87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                  18          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                  31          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                   9          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                 195          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1097          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                1464          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 187          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                   0          1          1    ZERO                 
+    Cross CR_empty                                    100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                   3          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                1008          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                  23          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                  10          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                 210          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                  89          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                1472          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 186          1          -    Covered              
+    Cross CR_overflow                                  75.00%        100          -    Uncovered            
+        covered/total bins:                                 6          8          -                      
+        missing/total bins:                                 2          8          -                      
+        % Hit:                                         75.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                  90          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                1064          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                 123          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1097          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                 431          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 196          1          -    Covered              
+            bin <auto[0],*,auto[1]>                         0          1          2    ZERO                 
+    Cross CR_underflow                                 75.00%        100          -    Uncovered            
+        covered/total bins:                                 6          8          -                      
+        missing/total bins:                                 2          8          -                      
+        % Hit:                                         75.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                   7          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                 984          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                 206          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                 113          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                1495          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 196          1          -    Covered              
+            bin <*,auto[0],auto[1]>                         0          1          2    ZERO                 
+    Cross CR_wr_ack                                    75.00%        100          -    Uncovered            
+        covered/total bins:                                 6          8          -                      
+        missing/total bins:                                 2          8          -                      
+        % Hit:                                         75.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                 120          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                 408          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                  93          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1097          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                1087          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 196          1          -    Covered              
+            bin <auto[0],*,auto[1]>                         0          1          2    ZERO                 
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /fifo_coverage_collector_pkg/fifo_coverage_collector/cov 
+                                                       93.75%        100          -    Uncovered            
+    covered/total bins:                                   131        140          -                      
+    missing/total bins:                                     9        140          -                      
+    % Hit:                                             93.57%        100          -                      
+    Coverpoint data_in_cvp                            100.00%        100          -    Covered              
+        covered/total bins:                                64         64          -                      
+        missing/total bins:                                 0         64          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0:1023]                                   46          1          -    Covered              
+        bin auto[1024:2047]                                44          1          -    Covered              
+        bin auto[2048:3071]                                46          1          -    Covered              
+        bin auto[3072:4095]                                48          1          -    Covered              
+        bin auto[4096:5119]                                62          1          -    Covered              
+        bin auto[5120:6143]                                39          1          -    Covered              
+        bin auto[6144:7167]                                49          1          -    Covered              
+        bin auto[7168:8191]                                61          1          -    Covered              
+        bin auto[8192:9215]                                46          1          -    Covered              
+        bin auto[9216:10239]                               32          1          -    Covered              
+        bin auto[10240:11263]                              43          1          -    Covered              
+        bin auto[11264:12287]                              42          1          -    Covered              
+        bin auto[12288:13311]                              45          1          -    Covered              
+        bin auto[13312:14335]                              41          1          -    Covered              
+        bin auto[14336:15359]                              56          1          -    Covered              
+        bin auto[15360:16383]                              34          1          -    Covered              
+        bin auto[16384:17407]                              46          1          -    Covered              
+        bin auto[17408:18431]                              47          1          -    Covered              
+        bin auto[18432:19455]                              53          1          -    Covered              
+        bin auto[19456:20479]                              38          1          -    Covered              
+        bin auto[20480:21503]                              38          1          -    Covered              
+        bin auto[21504:22527]                              55          1          -    Covered              
+        bin auto[22528:23551]                              56          1          -    Covered              
+        bin auto[23552:24575]                              52          1          -    Covered              
+        bin auto[24576:25599]                              42          1          -    Covered              
+        bin auto[25600:26623]                              52          1          -    Covered              
+        bin auto[26624:27647]                              35          1          -    Covered              
+        bin auto[27648:28671]                              51          1          -    Covered              
+        bin auto[28672:29695]                              45          1          -    Covered              
+        bin auto[29696:30719]                              43          1          -    Covered              
+        bin auto[30720:31743]                              47          1          -    Covered              
+        bin auto[31744:32767]                              59          1          -    Covered              
+        bin auto[32768:33791]                              56          1          -    Covered              
+        bin auto[33792:34815]                              43          1          -    Covered              
+        bin auto[34816:35839]                              42          1          -    Covered              
+        bin auto[35840:36863]                              52          1          -    Covered              
+        bin auto[36864:37887]                              47          1          -    Covered              
+        bin auto[37888:38911]                              45          1          -    Covered              
+        bin auto[38912:39935]                              53          1          -    Covered              
+        bin auto[39936:40959]                              25          1          -    Covered              
+        bin auto[40960:41983]                              48          1          -    Covered              
+        bin auto[41984:43007]                              49          1          -    Covered              
+        bin auto[43008:44031]                              42          1          -    Covered              
+        bin auto[44032:45055]                              43          1          -    Covered              
+        bin auto[45056:46079]                              48          1          -    Covered              
+        bin auto[46080:47103]                              46          1          -    Covered              
+        bin auto[47104:48127]                              48          1          -    Covered              
+        bin auto[48128:49151]                              58          1          -    Covered              
+        bin auto[49152:50175]                              45          1          -    Covered              
+        bin auto[50176:51199]                              51          1          -    Covered              
+        bin auto[51200:52223]                              48          1          -    Covered              
+        bin auto[52224:53247]                              54          1          -    Covered              
+        bin auto[53248:54271]                              46          1          -    Covered              
+        bin auto[54272:55295]                              55          1          -    Covered              
+        bin auto[55296:56319]                              48          1          -    Covered              
+        bin auto[56320:57343]                              59          1          -    Covered              
+        bin auto[57344:58367]                              42          1          -    Covered              
+        bin auto[58368:59391]                              35          1          -    Covered              
+        bin auto[59392:60415]                              48          1          -    Covered              
+        bin auto[60416:61439]                              43          1          -    Covered              
+        bin auto[61440:62463]                              51          1          -    Covered              
+        bin auto[62464:63487]                              47          1          -    Covered              
+        bin auto[63488:64511]                              48          1          -    Covered              
+        bin auto[64512:65535]                              43          1          -    Covered              
+    Coverpoint rst_n_cvp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                        52          1          -    Covered              
+        bin auto[1]                                      2949          1          -    Covered              
+    Coverpoint wr_en_cvp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1293          1          -    Covered              
+        bin auto[1]                                      1708          1          -    Covered              
+    Coverpoint rd_en_cvp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1691          1          -    Covered              
+        bin auto[1]                                      1310          1          -    Covered              
+    Coverpoint wr_ack_cvp                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      2473          1          -    Covered              
+        bin auto[1]                                       528          1          -    Covered              
+    Coverpoint overflow_cvp                           100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1847          1          -    Covered              
+        bin auto[1]                                      1154          1          -    Covered              
+    Coverpoint full_cvp                               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1712          1          -    Covered              
+        bin auto[1]                                      1289          1          -    Covered              
+    Coverpoint empty_cvp                              100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      1957          1          -    Covered              
+        bin auto[1]                                      1044          1          -    Covered              
+    Coverpoint almostfull_cvp                         100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      2694          1          -    Covered              
+        bin auto[1]                                       307          1          -    Covered              
+    Coverpoint almostempty_cvp                        100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      2943          1          -    Covered              
+        bin auto[1]                                        58          1          -    Covered              
+    Coverpoint underflow_cvp                          100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                      2010          1          -    Covered              
+        bin auto[1]                                       991          1          -    Covered              
+    Cross CR_full                                      75.00%        100          -    Uncovered            
+        covered/total bins:                                 6          8          -                      
+        missing/total bins:                                 2          8          -                      
+        % Hit:                                         75.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[0],auto[1]>                1216          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                  73          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                 213          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1097          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                 279          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 123          1          -    Covered              
+            bin <*,auto[1],auto[1]>                         0          1          2    ZERO                 
+    Cross CR_almostfull                               100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                 146          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                  42          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                  55          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                  64          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                  67          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1055          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                1440          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 132          1          -    Covered              
+    Cross CR_almostempty                               87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                  18          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                  31          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                   9          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                 195          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1097          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                1464          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 187          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                   0          1          1    ZERO                 
+    Cross CR_empty                                    100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                   3          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                1008          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                  23          1          -    Covered              
+            bin <auto[0],auto[0],auto[1]>                  10          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                 210          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                  89          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                1472          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 186          1          -    Covered              
+    Cross CR_overflow                                  75.00%        100          -    Uncovered            
+        covered/total bins:                                 6          8          -                      
+        missing/total bins:                                 2          8          -                      
+        % Hit:                                         75.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                  90          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                1064          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                 123          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1097          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                 431          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 196          1          -    Covered              
+            bin <auto[0],*,auto[1]>                         0          1          2    ZERO                 
+    Cross CR_underflow                                 75.00%        100          -    Uncovered            
+        covered/total bins:                                 6          8          -                      
+        missing/total bins:                                 2          8          -                      
+        % Hit:                                         75.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                   7          1          -    Covered              
+            bin <auto[0],auto[1],auto[1]>                 984          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                 206          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                 113          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                1495          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 196          1          -    Covered              
+            bin <*,auto[0],auto[1]>                         0          1          2    ZERO                 
+    Cross CR_wr_ack                                    75.00%        100          -    Uncovered            
+        covered/total bins:                                 6          8          -                      
+        missing/total bins:                                 2          8          -                      
+        % Hit:                                         75.00%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[1],auto[1],auto[1]>                 120          1          -    Covered              
+            bin <auto[1],auto[0],auto[1]>                 408          1          -    Covered              
+            bin <auto[1],auto[1],auto[0]>                  93          1          -    Covered              
+            bin <auto[0],auto[1],auto[0]>                1097          1          -    Covered              
+            bin <auto[1],auto[0],auto[0]>                1087          1          -    Covered              
+            bin <auto[0],auto[0],auto[0]>                 196          1          -    Covered              
+            bin <auto[0],*,auto[1]>                         0          1          2    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 93.75%  COVERGROUP TYPES: 1
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/fifo_top/DUT/sva_inst/cover__rd_ptr_p   fifo_sva Verilog  SVA  fifo_sva.sv(121) 288 Covered   
+/fifo_top/DUT/sva_inst/cover__wr_ptr_p   fifo_sva Verilog  SVA  fifo_sva.sv(120) 517 Covered   
+/fifo_top/DUT/sva_inst/cover__same_count_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(107) 111 Covered   
+/fifo_top/DUT/sva_inst/cover__dec_count_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(106)  88 Covered   
+/fifo_top/DUT/sva_inst/cover__inc_count_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(105) 399 Covered   
+/fifo_top/DUT/sva_inst/cover__almostempty_0_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(90) 2893 Covered   
+/fifo_top/DUT/sva_inst/cover__almostempty_1_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(89)   56 Covered   
+/fifo_top/DUT/sva_inst/cover__empty_0_p  fifo_sva Verilog  SVA  fifo_sva.sv(78) 1922 Covered   
+/fifo_top/DUT/sva_inst/cover__empty_1_p  fifo_sva Verilog  SVA  fifo_sva.sv(77) 1079 Covered   
+/fifo_top/DUT/sva_inst/cover__almostfull_0_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(66) 2702 Covered   
+/fifo_top/DUT/sva_inst/cover__almostfull_1_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(65)  299 Covered   
+/fifo_top/DUT/sva_inst/cover__full_0_p   fifo_sva Verilog  SVA  fifo_sva.sv(54)  554 Covered   
+/fifo_top/DUT/sva_inst/cover__full_1_p   fifo_sva Verilog  SVA  fifo_sva.sv(53) 1154 Covered   
+/fifo_top/DUT/sva_inst/cover__wr_ack_0_p fifo_sva Verilog  SVA  fifo_sva.sv(39) 1138 Covered   
+/fifo_top/DUT/sva_inst/cover__wr_ack_1_p fifo_sva Verilog  SVA  fifo_sva.sv(38)  517 Covered   
+/fifo_top/DUT/sva_inst/cover__underflow_0_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(27)  288 Covered   
+/fifo_top/DUT/sva_inst/cover__underflow_1_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(26)  975 Covered   
+/fifo_top/DUT/sva_inst/cover__overflow_0_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(15)  517 Covered   
+/fifo_top/DUT/sva_inst/cover__overflow_1_p 
+                                         fifo_sva Verilog  SVA  fifo_sva.sv(14) 1138 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 19
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/fifo_top/DUT/sva_inst/assert__rd_ptr_p
+                     fifo_sva.sv(119)                   0          1
+/fifo_top/DUT/sva_inst/assert__wr_ptr_p
+                     fifo_sva.sv(118)                   0          1
+/fifo_top/DUT/sva_inst/assert__same_count_p
+                     fifo_sva.sv(104)                   0          1
+/fifo_top/DUT/sva_inst/assert__dec_count_p
+                     fifo_sva.sv(103)                   0          1
+/fifo_top/DUT/sva_inst/assert__inc_count_p
+                     fifo_sva.sv(102)                   0          1
+/fifo_top/DUT/sva_inst/assert__almostempty_0_p
+                     fifo_sva.sv(88)                    0          1
+/fifo_top/DUT/sva_inst/assert__almostempty_1_p
+                     fifo_sva.sv(87)                    0          1
+/fifo_top/DUT/sva_inst/assert__empty_0_p
+                     fifo_sva.sv(76)                    0          1
+/fifo_top/DUT/sva_inst/assert__empty_1_p
+                     fifo_sva.sv(75)                    0          1
+/fifo_top/DUT/sva_inst/assert__almostfull_0_p
+                     fifo_sva.sv(64)                    0          1
+/fifo_top/DUT/sva_inst/assert__almostfull_1_p
+                     fifo_sva.sv(63)                    0          1
+/fifo_top/DUT/sva_inst/assert__full_0_p
+                     fifo_sva.sv(52)                    0          1
+/fifo_top/DUT/sva_inst/assert__full_1_p
+                     fifo_sva.sv(51)                    0          1
+/fifo_top/DUT/sva_inst/assert__wr_ack_0_p
+                     fifo_sva.sv(37)                    0          1
+/fifo_top/DUT/sva_inst/assert__wr_ack_1_p
+                     fifo_sva.sv(36)                    0          1
+/fifo_top/DUT/sva_inst/assert__underflow_0_p
+                     fifo_sva.sv(25)                    0          1
+/fifo_top/DUT/sva_inst/assert__underflow_1_p
+                     fifo_sva.sv(24)                    0          1
+/fifo_top/DUT/sva_inst/assert__overflow_0_p
+                     fifo_sva.sv(13)                    0          1
+/fifo_top/DUT/sva_inst/assert__overflow_1_p
+                     fifo_sva.sv(12)                    0          1
+/fifo_top/DUT/sva_inst/rst_co_assert
+                     fifo_sva.sv(125)                   0          1
+/fifo_top/DUT/sva_inst/rst_wr_assert
+                     fifo_sva.sv(126)                   0          1
+/fifo_top/DUT/sva_inst/rst_rd_assert
+                     fifo_sva.sv(127)                   0          1
+/fifo_main_sequence_pkg/fifo_main_sequence/body/#ublk#124017991#18/immed__29
+                     fifo_main_sequence.sv(29)          0          1
+/fifo_main_sequence_pkg/fifo_main_sequence/body/#ublk#124017991#33/immed__38
+                     fifo_main_sequence.sv(38)          0          1
+/fifo_main_sequence_pkg/fifo_main_sequence/body/#ublk#124017991#42/immed__46
+                     fifo_main_sequence.sv(46)          0          1
+
+Total Coverage By Instance (filtered view): 97.91%
+

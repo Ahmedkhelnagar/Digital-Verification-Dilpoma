@@ -1,0 +1,683 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /counter_tb/DUT
+=== Design Unit: work.counter
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10        10         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /counter_tb/DUT
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File counter.v
+------------------------------------IF Branch------------------------------------
+    21                                      9993     Count coming in to IF
+    21              1                        210         if (!rst_n)
+    23              1                       6867         else if (!load_n)
+    25              1                       2033         else if (ce)
+                                             883     All False Count
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    26                                      2033     Count coming in to IF
+    26              1                        994             if (up_down)
+    28              1                       1039             else 
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    32                                      8645     Count coming in to IF
+    32              1                        564     assign max_count = (count_out == {WIDTH{1'b1}})? 1:0;
+    32              2                       8081     assign max_count = (count_out == {WIDTH{1'b1}})? 1:0;
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    33                                      8645     Count coming in to IF
+    33              1                        719     assign zero = (count_out == 0)? 1:0;
+    33              2                       7926     assign zero = (count_out == 0)? 1:0;
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         2         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /counter_tb/DUT --
+
+  File counter.v
+----------------Focused Condition View-------------------
+Line       32 Item    1  (count_out == {4{{1}}})
+Condition totals: 1 of 1 input term covered = 100.00%
+
+               Input Term   Covered  Reason for no coverage   Hint
+              -----------  --------  -----------------------  --------------
+  (count_out == {4{{1}}})         Y
+
+     Rows:       Hits  FEC Target                 Non-masking condition(s)      
+ ---------  ---------  --------------------       -------------------------     
+  Row   1:          1  (count_out == {4{{1}}})_0  -                             
+  Row   2:          1  (count_out == {4{{1}}})_1  -                             
+
+----------------Focused Condition View-------------------
+Line       33 Item    1  (count_out == 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+        Input Term   Covered  Reason for no coverage   Hint
+       -----------  --------  -----------------------  --------------
+  (count_out == 0)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (count_out == 0)_0    -                             
+  Row   2:          1  (count_out == 0)_1    -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       7         7         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /counter_tb/DUT --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File counter.v
+    8                                                module counter (clk ,rst_n, load_n, up_down, ce, data_load, count_out, max_count, zero);
+    9                                                parameter WIDTH = 4;
+    10                                               input clk;
+    11                                               input rst_n;
+    12                                               input load_n;
+    13                                               input up_down;
+    14                                               input ce;
+    15                                               input [WIDTH-1:0] data_load;
+    16                                               output reg [WIDTH-1:0] count_out;
+    17                                               output max_count;
+    18                                               output zero;
+    19                                               
+    20              1                       9993     always @(posedge clk) begin
+    21                                                   if (!rst_n)
+    22              1                        210             count_out <= 0;
+    23                                                   else if (!load_n)
+    24              1                       6867             count_out <= data_load;
+    25                                                   else if (ce)
+    26                                                       if (up_down)
+    27              1                        994                 count_out <= count_out + 1;
+    28                                                       else 
+    29              1                       1039                 count_out <= count_out - 1;
+    30                                               end
+    31                                               
+    32              1                       8646     assign max_count = (count_out == {WIDTH{1'b1}})? 1:0;
+    33              1                       8646     assign zero = (count_out == 0)? 1:0;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         30        30         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /counter_tb/DUT --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                                ce           1           1      100.00 
+                                               clk           1           1      100.00 
+                                    count_out[3-0]           1           1      100.00 
+                                    data_load[0-3]           1           1      100.00 
+                                            load_n           1           1      100.00 
+                                         max_count           1           1      100.00 
+                                             rst_n           1           1      100.00 
+                                           up_down           1           1      100.00 
+                                              zero           1           1      100.00 
+
+Total Node Count     =         15 
+Toggled Node Count   =         15 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (30 of 30 bins)
+
+=================================================================================
+=== Instance: /counter_tb
+=== Design Unit: work.counter_tb
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/counter_tb/#ublk#95084642#45/immed__46
+                     counter_tb.sv(46)                  0          1
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        14        12         2    85.71%
+
+================================Branch Details================================
+
+Branch Coverage for instance /counter_tb
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File counter_tb.sv
+------------------------------------IF Branch------------------------------------
+    69                                     10000     Count coming in to IF
+    69              1                        209             if(!rst_n)begin
+    72              1                       6874             else if(!load_n)begin
+    75              1                       2033             else if(ce)begin
+                                             884     All False Count
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    76                                      2033     Count coming in to IF
+    76              1                        994                 if(up_down)begin
+    79              1                       1039                 else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    83                                      8644     Count coming in to IF
+    83              1                        564             assign expected_max_count = (expected_count_out == {WIDTH{1'b1}} ? 1 : 0);
+    83              2                       8080             assign expected_max_count = (expected_count_out == {WIDTH{1'b1}} ? 1 : 0);
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    84                                      8644     Count coming in to IF
+    84              1                        718             assign expected_zero = (expected_count_out == 0 ? 1 : 0);
+    84              2                       7926             assign expected_zero = (expected_count_out == 0 ? 1 : 0);
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    95                                     10000     Count coming in to IF
+    95              1                    ***0***             if((count_out !== expected_count_out) || (max_count !== expected_max_count) || (zero !== expected_zero))begin
+    101             1                      10000             else begin
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    116                                        1     Count coming in to IF
+    116             1                    ***0***             if(count_out !== 0 && max_count !==0 && zero !==0)begin
+    120             1                          1             else begin
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       8         2         6    25.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /counter_tb --
+
+  File counter_tb.sv
+----------------Focused Condition View-------------------
+Line       83 Item    1  (expected_count_out == {4{1}})
+Condition totals: 1 of 1 input term covered = 100.00%
+
+                      Input Term   Covered  Reason for no coverage   Hint
+                     -----------  --------  -----------------------  --------------
+  (expected_count_out == {4{1}})         Y
+
+     Rows:       Hits  FEC Target                        Non-masking condition(s)      
+ ---------  ---------  --------------------              -------------------------     
+  Row   1:          1  (expected_count_out == {4{1}})_0  -                             
+  Row   2:          1  (expected_count_out == {4{1}})_1  -                             
+
+----------------Focused Condition View-------------------
+Line       84 Item    1  (expected_count_out == 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+                 Input Term   Covered  Reason for no coverage   Hint
+                -----------  --------  -----------------------  --------------
+  (expected_count_out == 0)         Y
+
+     Rows:       Hits  FEC Target                   Non-masking condition(s)      
+ ---------  ---------  --------------------         -------------------------     
+  Row   1:          1  (expected_count_out == 0)_0  -                             
+  Row   2:          1  (expected_count_out == 0)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       95 Item    1  (((count_out !== expected_count_out) || (max_count !== expected_max_count)) || (zero !== expected_zero))
+Condition totals: 0 of 3 input terms covered = 0.00%
+
+                          Input Term   Covered  Reason for no coverage   Hint
+                         -----------  --------  -----------------------  --------------
+  (count_out !== expected_count_out)         N  '_1' not hit             Hit '_1'
+  (max_count !== expected_max_count)         N  '_1' not hit             Hit '_1'
+            (zero !== expected_zero)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                            Non-masking condition(s)      
+ ---------  ---------  --------------------                  -------------------------     
+  Row   1:          1  (count_out !== expected_count_out)_0  (~(zero !== expected_zero) && ~(max_count !== expected_max_count))
+  Row   2:    ***0***  (count_out !== expected_count_out)_1  -                             
+  Row   3:          1  (max_count !== expected_max_count)_0  (~(zero !== expected_zero) && ~(count_out !== expected_count_out))
+  Row   4:    ***0***  (max_count !== expected_max_count)_1  ~(count_out !== expected_count_out)
+  Row   5:          1  (zero !== expected_zero)_0            ~((count_out !== expected_count_out) || (max_count !== expected_max_count))
+  Row   6:    ***0***  (zero !== expected_zero)_1            ~((count_out !== expected_count_out) || (max_count !== expected_max_count))
+
+----------------Focused Condition View-------------------
+Line       116 Item    1  (((count_out !== 0) && (max_count !== 1'b0)) && (zero !== 1'b0))
+Condition totals: 0 of 3 input terms covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+     (count_out !== 0)         N  '_1' not hit             Hit '_1'
+  (max_count !== 1'b0)         N  No hits                  Hit '_0' and '_1'
+       (zero !== 1'b0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:          1  (count_out !== 0)_0     -                             
+  Row   2:    ***0***  (count_out !== 0)_1     ((zero !== 1'b0) && (max_count !== 1'b0))
+  Row   3:    ***0***  (max_count !== 1'b0)_0  (count_out !== 0)             
+  Row   4:    ***0***  (max_count !== 1'b0)_1  ((zero !== 1'b0) && (count_out !== 0))
+  Row   5:    ***0***  (zero !== 1'b0)_0       ((count_out !== 0) && (max_count !== 1'b0))
+  Row   6:    ***0***  (zero !== 1'b0)_1       ((count_out !== 0) && (max_count !== 1'b0))
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      40        35         5    87.50%
+
+================================Statement Details================================
+
+Statement Coverage for instance /counter_tb --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File counter_tb.sv
+    5                                                module counter_tb;
+    6                                                    //Create object from the class
+    7               1                          1         constraints obj = new();
+    8                                                
+    9                                                    //Signals declairation
+    10                                                   //Input Ports
+    11                                                   bit clk,rst_n,load_n,up_down,ce;
+    12                                                   bit [WIDTH-1 : 0]data_load;
+    13                                                   //Output Ports
+    14                                                   logic [WIDTH-1 : 0]count_out;
+    15                                                   logic max_count;
+    16                                                   logic zero;
+    17                                               
+    18                                                   //Internal signals
+    19                                                   logic [WIDTH-1 : 0]expected_count_out;
+    20                                                   logic [WIDTH -1 : 0]tmp;
+    21                                                   logic expected_zero,expected_max_count;
+    22                                                   //Variables
+    23                                                   integer error_count = 0;
+    24                                                   integer correct_count = 0;
+    25                                                   
+    26                                                   //Instantiation module
+    27                                                   counter DUT(.*);
+    28                                               
+    29                                                   //Clock generation
+    30                                                   initial begin
+    31              1                          1             clk = 0;
+    32              1                          1             forever begin 
+    33              1                      20005                 #1 clk = ~clk;
+    33              2                      20004     
+    34              1                      20004                 obj.clk = clk;
+    35                                                       end
+    36                                                   end
+    37                                               
+    38                                                   //Test stimulus generation
+    39                                                   initial begin
+    40              1                          1             load_n = 1;
+    41              1                          1             up_down = 0;
+    42              1                          1             ce = 0;
+    43                                                       
+    44              1                          1             assert_reset;
+    45              1                      10000             repeat(10000)begin
+    46                                                           assert(obj.randomize());
+    47              1                      10000                 rst_n = obj.rst_n;
+    48              1                      10000                 load_n = obj.load_n;
+    49              1                      10000                 up_down = obj.up_down;
+    50              1                      10000                 ce = obj.ce;
+    51              1                      10000                 data_load = obj.data_load;
+    52              1                      10000                 check_result;
+    53                                                       end
+    54              1                          1             $display("correct_count = %0d,error_count = %0d", correct_count, error_count);
+    55              1                          1             $stop;
+    56                                                   end
+    57                                                   
+    58                                                   /**Expected count out**/
+    59                                                   /**Assign not work correctly***/
+    60                                                   // assign tmp = (!load_n) ? data_load : 
+    61                                                   // (ce ? (up_down ? (count_out + 1) : (count_out - 1)) : count_out);
+    62                                               
+    63                                                   // assign expected_count_out = tmp;
+    64                                                   // assign expected_max_count = (expected_count_out == {WIDTH{1'b1}} ? 1 : 0);
+    65                                                   // assign expected_zero = (expected_count_out == 0 ? 1 : 0);
+    66                                               
+    67                                                   //Golden Model
+    68                                                   task golden_model;
+    69                                                       if(!rst_n)begin
+    70              1                        209                 expected_count_out = 0;
+    71                                                       end
+    72                                                       else if(!load_n)begin
+    73              1                       6874                 expected_count_out = data_load;
+    74                                                       end
+    75                                                       else if(ce)begin
+    76                                                           if(up_down)begin
+    77              1                        994                     expected_count_out = expected_count_out + 1;
+    78                                                           end
+    79                                                           else begin
+    80              1                       1039                     expected_count_out = expected_count_out - 1;
+    81                                                           end
+    82                                                       end
+    83              1                       8644             assign expected_max_count = (expected_count_out == {WIDTH{1'b1}} ? 1 : 0);
+    84              1                       8644             assign expected_zero = (expected_count_out == 0 ? 1 : 0);
+    85                                                   endtask
+    86                                               
+    87                                                   /*********************************************
+    88                                                   *
+    89                                                   *           Tasks Implementation           
+    90                                                   *
+    91                                                   **********************************************/
+    92                                                   task check_result;
+    93              1                      10000             golden_model;
+    94              1                      10000             @(negedge clk);
+    95                                                       if((count_out !== expected_count_out) || (max_count !== expected_max_count) || (zero !== expected_zero))begin
+    96              1                    ***0***                 $display("Error in the output!!,counter_out = %0d,expected_count_out = %0d",
+    97                                                                   count_out,expected_count_out);
+    98              1                    ***0***                 error_count = error_count + 1;
+    99              1                    ***0***                 $stop;
+    100                                                      end
+    101                                                      else begin
+    102             1                      10000                 correct_count = correct_count + 1;
+    103                                                      end
+    104                                                  endtask
+    105                                              
+    106                                                  task assert_reset;
+    107             1                          1             rst_n = 1;
+    108             1                          1             @(negedge clk); //here the rst is toggled from 0 to 1 
+    109             1                          1             rst_n = 0;  //active reset
+    110             1                          1             check_out_equal_0;
+    111             1                          1             rst_n = 1;        //here the rst is toggled from 1 to 0
+    112                                                  endtask
+    113                                              
+    114                                                  task check_out_equal_0;
+    115             1                          1             @(negedge clk);
+    116                                                      if(count_out !== 0 && max_count !==0 && zero !==0)begin
+    117             1                    ***0***                 $display("Error !!");
+    118             1                    ***0***                 error_count = error_count + 1;
+    119                                                      end
+    120                                                      else begin
+    121             1                          1                 correct_count = correct_count + 1;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        178        69       109    38.76%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /counter_tb --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                                ce           1           1      100.00 
+                                               clk           1           1      100.00 
+                               correct_count[0-12]           1           1      100.00 
+                                 correct_count[13]           0           1       50.00 
+                              correct_count[14-31]           0           0        0.00 
+                                    count_out[0-3]           1           1      100.00 
+                                    data_load[0-3]           1           1      100.00 
+                                 error_count[0-31]           0           0        0.00 
+                           expected_count_out[0-3]           1           1      100.00 
+                                expected_max_count           1           1      100.00 
+                                     expected_zero           1           1      100.00 
+                                            load_n           1           1      100.00 
+                                         max_count           1           1      100.00 
+                                             rst_n           1           1      100.00 
+                                          tmp[0-3]           0           0        0.00 
+                                           up_down           1           1      100.00 
+                                              zero           1           1      100.00 
+
+Total Node Count     =         89 
+Toggled Node Count   =         34 
+Untoggled Node Count =         55 
+
+Toggle Coverage      =      38.76% (69 of 178 bins)
+
+=================================================================================
+=== Instance: /pkg_constraint
+=== Design Unit: work.pkg_constraint
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      1        na        na   100.00%
+        Coverpoints/Crosses          5        na        na        na
+            Covergroup Bins         50        50         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /pkg_constraint/constraints/counter_covgroup    100.00%        100          -    Covered              
+    covered/total bins:                                    50         50          -                      
+    missing/total bins:                                     0         50          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint DL                                     100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint CO_all_up                              100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint CO_Tra_up                              100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint CO_all_down                            100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint CO_tra_down                            100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/pkg_constraint::constraints::counter_covgroup  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    50         50          -                      
+    missing/total bins:                                     0         50          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint DL                                     100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin load_values[0]                                445          1          -    Covered              
+        bin load_values[1]                                440          1          -    Covered              
+        bin load_values[2]                                450          1          -    Covered              
+        bin load_values[3]                                477          1          -    Covered              
+        bin load_values[4]                                443          1          -    Covered              
+        bin load_values[5]                                408          1          -    Covered              
+        bin load_values[6]                                463          1          -    Covered              
+        bin load_values[7]                                431          1          -    Covered              
+        bin load_values[8]                                368          1          -    Covered              
+        bin load_values[9]                                422          1          -    Covered              
+        bin load_values[10]                               453          1          -    Covered              
+        bin load_values[11]                               430          1          -    Covered              
+        bin load_values[12]                               428          1          -    Covered              
+        bin load_values[13]                               445          1          -    Covered              
+        bin load_values[14]                               437          1          -    Covered              
+        bin load_values[15]                               453          1          -    Covered              
+    Coverpoint CO_all_up                              100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin count_all_up[0]                               217          1          -    Covered              
+        bin count_all_up[1]                               191          1          -    Covered              
+        bin count_all_up[2]                               222          1          -    Covered              
+        bin count_all_up[3]                               241          1          -    Covered              
+        bin count_all_up[4]                               196          1          -    Covered              
+        bin count_all_up[5]                               190          1          -    Covered              
+        bin count_all_up[6]                               210          1          -    Covered              
+        bin count_all_up[7]                               228          1          -    Covered              
+        bin count_all_up[8]                               222          1          -    Covered              
+        bin count_all_up[9]                               197          1          -    Covered              
+        bin count_all_up[10]                              204          1          -    Covered              
+        bin count_all_up[11]                              197          1          -    Covered              
+        bin count_all_up[12]                              190          1          -    Covered              
+        bin count_all_up[13]                              210          1          -    Covered              
+        bin count_all_up[14]                              206          1          -    Covered              
+        bin count_all_up[15]                              200          1          -    Covered              
+    Coverpoint CO_Tra_up                              100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin overflow[15=>0]                                15          1          -    Covered              
+    Coverpoint CO_all_down                            100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin count_all_down[0]                             210          1          -    Covered              
+        bin count_all_down[1]                             223          1          -    Covered              
+        bin count_all_down[2]                             203          1          -    Covered              
+        bin count_all_down[3]                             226          1          -    Covered              
+        bin count_all_down[4]                             211          1          -    Covered              
+        bin count_all_down[5]                             218          1          -    Covered              
+        bin count_all_down[6]                             207          1          -    Covered              
+        bin count_all_down[7]                             191          1          -    Covered              
+        bin count_all_down[8]                             218          1          -    Covered              
+        bin count_all_down[9]                             238          1          -    Covered              
+        bin count_all_down[10]                            221          1          -    Covered              
+        bin count_all_down[11]                            226          1          -    Covered              
+        bin count_all_down[12]                            230          1          -    Covered              
+        bin count_all_down[13]                            249          1          -    Covered              
+        bin count_all_down[14]                            217          1          -    Covered              
+        bin count_all_down[15]                            238          1          -    Covered              
+    Coverpoint CO_tra_down                            100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin underflow[0=>15]                               15          1          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /pkg_constraint/constraints/counter_covgroup    100.00%        100          -    Covered              
+    covered/total bins:                                    50         50          -                      
+    missing/total bins:                                     0         50          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint DL                                     100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint CO_all_up                              100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint CO_Tra_up                              100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint CO_all_down                            100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+    Coverpoint CO_tra_down                            100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+ Covergroup instance \/pkg_constraint::constraints::counter_covgroup  
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    50         50          -                      
+    missing/total bins:                                     0         50          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint DL                                     100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin load_values[0]                                445          1          -    Covered              
+        bin load_values[1]                                440          1          -    Covered              
+        bin load_values[2]                                450          1          -    Covered              
+        bin load_values[3]                                477          1          -    Covered              
+        bin load_values[4]                                443          1          -    Covered              
+        bin load_values[5]                                408          1          -    Covered              
+        bin load_values[6]                                463          1          -    Covered              
+        bin load_values[7]                                431          1          -    Covered              
+        bin load_values[8]                                368          1          -    Covered              
+        bin load_values[9]                                422          1          -    Covered              
+        bin load_values[10]                               453          1          -    Covered              
+        bin load_values[11]                               430          1          -    Covered              
+        bin load_values[12]                               428          1          -    Covered              
+        bin load_values[13]                               445          1          -    Covered              
+        bin load_values[14]                               437          1          -    Covered              
+        bin load_values[15]                               453          1          -    Covered              
+    Coverpoint CO_all_up                              100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin count_all_up[0]                               217          1          -    Covered              
+        bin count_all_up[1]                               191          1          -    Covered              
+        bin count_all_up[2]                               222          1          -    Covered              
+        bin count_all_up[3]                               241          1          -    Covered              
+        bin count_all_up[4]                               196          1          -    Covered              
+        bin count_all_up[5]                               190          1          -    Covered              
+        bin count_all_up[6]                               210          1          -    Covered              
+        bin count_all_up[7]                               228          1          -    Covered              
+        bin count_all_up[8]                               222          1          -    Covered              
+        bin count_all_up[9]                               197          1          -    Covered              
+        bin count_all_up[10]                              204          1          -    Covered              
+        bin count_all_up[11]                              197          1          -    Covered              
+        bin count_all_up[12]                              190          1          -    Covered              
+        bin count_all_up[13]                              210          1          -    Covered              
+        bin count_all_up[14]                              206          1          -    Covered              
+        bin count_all_up[15]                              200          1          -    Covered              
+    Coverpoint CO_Tra_up                              100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin overflow[15=>0]                                15          1          -    Covered              
+    Coverpoint CO_all_down                            100.00%        100          -    Covered              
+        covered/total bins:                                16         16          -                      
+        missing/total bins:                                 0         16          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin count_all_down[0]                             210          1          -    Covered              
+        bin count_all_down[1]                             223          1          -    Covered              
+        bin count_all_down[2]                             203          1          -    Covered              
+        bin count_all_down[3]                             226          1          -    Covered              
+        bin count_all_down[4]                             211          1          -    Covered              
+        bin count_all_down[5]                             218          1          -    Covered              
+        bin count_all_down[6]                             207          1          -    Covered              
+        bin count_all_down[7]                             191          1          -    Covered              
+        bin count_all_down[8]                             218          1          -    Covered              
+        bin count_all_down[9]                             238          1          -    Covered              
+        bin count_all_down[10]                            221          1          -    Covered              
+        bin count_all_down[11]                            226          1          -    Covered              
+        bin count_all_down[12]                            230          1          -    Covered              
+        bin count_all_down[13]                            249          1          -    Covered              
+        bin count_all_down[14]                            217          1          -    Covered              
+        bin count_all_down[15]                            238          1          -    Covered              
+    Coverpoint CO_tra_down                            100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin underflow[0=>15]                               15          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/counter_tb/#ublk#95084642#45/immed__46
+                     counter_tb.sv(46)                  0          1
+
+Total Coverage By Instance (filtered view): 78.10%
+

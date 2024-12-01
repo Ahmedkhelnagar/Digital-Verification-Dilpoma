@@ -1,0 +1,13 @@
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:42:28 on Sep 21,2024
+# vlog -reportprogress 300 ALU_4_bit.v ALU_4_bit_tb.sv "+cover" -covercells 
+# -- Compiling module ALU_4_bit
+# -- Compiling module ALU_4_bit_tb
+# 
+# Top level modules:
+# 	ALU_4_bit_tb
+# End time: 18:42:28 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

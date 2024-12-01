@@ -1,0 +1,109 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /\ALU_4_bit_tb#DUT 
+=== Design Unit: work.ALU_4_bit
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\ALU_4_bit_tb#DUT 
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ALU_4_bit.v
+------------------------------------CASE Branch------------------------------------
+    21                                      1023     Count coming in to CASE
+    22              1                       1010           	Add:            Alu_out = A + B;
+    23              1                          9           	Sub:            Alu_out = A - B;
+    24              1                          2           	Not_A:          Alu_out = ~A;
+    25              1                          2           	ReductionOR_B:  Alu_out = |B;
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    32                                      1022     Count coming in to IF
+    32              1                          2           if (reset)
+    34              1                       1020           else
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       8         8         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\ALU_4_bit_tb#DUT  --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ALU_4_bit.v
+    1                                                module ALU_4_bit (
+    2                                                    input  clk,
+    3                                                    input  reset,
+    4                                                    input  [1:0] Opcode,	// The opcode
+    5                                                    input  signed [3:0] A,	// Input data A in 2's complement
+    6                                                    input  signed [3:0] B,	// Input data B in 2's complement
+    7                                                
+    8                                                    output reg signed [4:0] C // ALU output in 2's complement
+    9                                                
+    10                                               		  );
+    11                                               
+    12                                                  reg signed [4:0] 	    Alu_out; // ALU output in 2's complement
+    13                                               
+    14                                                  localparam 		    Add	           = 2'b00; // A + B
+    15                                                  localparam 		    Sub	           = 2'b01; // A - B
+    16                                                  localparam 		    Not_A	         = 2'b10; // ~A
+    17                                                  localparam 		    ReductionOR_B  = 2'b11; // |B
+    18                                               
+    19                                                  // Do the operation
+    20              1                       1023        always @* begin
+    21                                                     case (Opcode)
+    22              1                       1010           	Add:            Alu_out = A + B;
+    23              1                          9           	Sub:            Alu_out = A - B;
+    24              1                          2           	Not_A:          Alu_out = ~A;
+    25              1                          2           	ReductionOR_B:  Alu_out = |B;
+    26                                                       default:  Alu_out = 5'b0;
+    27                                                     endcase
+    28                                                  end // always @ *
+    29                                               
+    30                                                  // Register output C
+    31              1                       1022        always @(posedge clk or posedge reset) begin
+    32                                                     if (reset)
+    33              1                          2     	     C <= 5'b0;
+    34                                                     else
+    35              1                       1020     	     C<= Alu_out;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         44        44         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\ALU_4_bit_tb#DUT  --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                            A[0-3]           1           1      100.00 
+                                      Alu_out[4-0]           1           1      100.00 
+                                            B[0-3]           1           1      100.00 
+                                            C[4-0]           1           1      100.00 
+                                       Opcode[0-1]           1           1      100.00 
+                                               clk           1           1      100.00 
+                                             reset           1           1      100.00 
+
+Total Node Count     =         22 
+Toggled Node Count   =         22 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (44 of 44 bins)
+
+
+Total Coverage By Instance (filtered view): 100.00%
+

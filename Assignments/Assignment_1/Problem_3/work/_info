@@ -1,0 +1,103 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/Digital Design/KW Course/Verification/VF.Session 1/Assignment_1/Problem_2
+T_opt
+!s110 1724970094
+VczP7NCQMP3=d6l^oVK>JH1
+Z2 04 12 4 work ALU_4_bit_tb fast 0
+=1-e454e84764da-66d0f46e-10f-29ec
+Z3 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.1;73
+R1
+T_opt1
+!s110 1724969193
+VMnjMJ_Jn<IijmA=IfBg<M2
+R2
+=1-e454e84764da-66d0f0e8-347-32a0
+R3
+o-quiet -auto_acc_if_foreign -work work
+R4
+n@_opt1
+R5
+R1
+vALU_4_bit
+Z6 !s110 1725178582
+!i10b 1
+!s100 F`Y[W>e:FM630FfaX]=9[1
+IB@L83ACnLQG9=@bzOX__61
+Z7 dD:/Digital Design/KW Course/Verification/VF.Session 1/Assignment_1/Problem_3
+w1724968138
+8ALU_4_bit.v
+FALU_4_bit.v
+!i122 24
+L0 1 38
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z10 !s108 1725178581.000000
+!s107 ALU_4_bit_tb.sv|ALU_4_bit.v|
+Z11 !s90 -reportprogress|300|ALU_4_bit.v|ALU_4_bit_tb.sv|+cover|-covercells|
+!i113 0
+Z12 !s102 +cover -covercells
+Z13 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+n@a@l@u_4_bit
+vALU_4_bit_tb
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R6
+!i10b 1
+!s100 6RJN@Fi@[8f]Y^F5JDSX`0
+I4RcA`g=h:P_<S[L`n0VJg3
+S1
+R7
+w1725001694
+8ALU_4_bit_tb.sv
+FALU_4_bit_tb.sv
+!i122 24
+L0 3 155
+R8
+R9
+r1
+!s85 0
+31
+R10
+Z14 !s107 ALU_4_bit_tb.sv|ALU_4_bit.v|
+R11
+!i113 0
+R12
+R13
+R4
+n@a@l@u_4_bit_tb

@@ -1,0 +1,151 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/Digital Design/KW Course/Verification/VF.Session 3/Assignment_3/Problem_1
+T_opt
+!s110 1726326465
+VP]5MbFPO]CzVHX[;XAWkU1
+Z2 04 7 4 work ALSU_tb fast 0
+=1-e454e84764da-66e5a6be-2b1-168c
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.1;73
+R1
+T_opt1
+!s110 1726481891
+VEQGV7LJG3j``JGmCc^>d93
+R2
+=1-e454e84764da-66e805e0-2f4-1bbc
+R3
+R4
+R5
+n@_opt1
+R6
+vALSU
+Z7 !s110 1726481884
+!i10b 1
+!s100 T_DYA@@Vaj6f9>?LFDdd53
+I]neMlV_a7UkHPl?PMc9cA0
+Z8 dD:/Digital Design/KW Course/Verification/VF.Session 3/Assignment_3/Problem_2
+w1726050853
+8ALSU.v
+FALSU.v
+!i122 21
+L0 1 123
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z11 !s108 1726481884.000000
+Z12 !s107 ALSU_tb.sv|ALSU.v|package.sv|
+Z13 !s90 -reportprogress|300|package.sv|ALSU.v|ALSU_tb.sv|+cover|-covercells|
+!i113 0
+Z14 !s102 +cover -covercells
+Z15 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+n@a@l@s@u
+Xalsu_pkg
+Z16 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R7
+!i10b 1
+!s100 0zoEH?P_3RDAKjIUi19Dm0
+IXI:lMZIY[W??[mEBj4j8g1
+S1
+R8
+w1726326078
+8package.sv
+Fpackage.sv
+!i122 21
+Z17 L0 3 0
+VXI:lMZIY[W??[mEBj4j8g1
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R5
+vALSU_tb
+R16
+Z18 DXx4 work 8 alsu_pkg 0 22 XI:lMZIY[W??[mEBj4j8g1
+DXx4 work 15 ALSU_tb_sv_unit 0 22 L7z;VWI15i0lLfF`eT9;Y2
+R7
+R9
+r1
+!s85 0
+!i10b 1
+!s100 HLIWYaCL4ozXJ0mb=OXLc0
+IQig9E76dOQzS<8=I^hPS`0
+!s105 ALSU_tb_sv_unit
+S1
+R8
+Z19 w1726475346
+Z20 8ALSU_tb.sv
+Z21 FALSU_tb.sv
+!i122 21
+L0 5 227
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R5
+n@a@l@s@u_tb
+XALSU_tb_sv_unit
+R16
+R18
+R7
+VL7z;VWI15i0lLfF`eT9;Y2
+r1
+!s85 0
+!i10b 1
+!s100 <=LUWYbe9?d56KUdLWgFZ1
+IL7z;VWI15i0lLfF`eT9;Y2
+!i103 1
+S1
+R8
+R19
+R20
+R21
+!i122 21
+R17
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R15
+R5
+n@a@l@s@u_tb_sv_unit

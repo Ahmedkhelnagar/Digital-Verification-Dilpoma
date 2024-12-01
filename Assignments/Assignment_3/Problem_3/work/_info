@@ -1,0 +1,73 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/questasim64_2021.1/examples
+T_opt
+!s110 1726484341
+VCIoGen@Q:;BO]`fJ:MIj_1
+04 6 4 work ram_tb fast 0
+=1-e454e84764da-66e80f74-2d1-3dd8
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+R0
+vmy_mem
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1726485224
+!i10b 1
+!s100 gRCRCZnD]^B`R09aTo04M0
+I:e^fjKLVZT1nz8Ph3:g`O0
+S1
+Z4 dD:/Digital Design/KW Course/Verification/VF.Session 3/Assignment_3/Problem_3
+w1726356062
+8ram.sv
+Fram.sv
+!i122 2
+L0 3 20
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z7 !s108 1726485224.000000
+!s107 ram_tb.sv|ram.sv|
+Z8 !s90 -reportprogress|300|ram.sv|ram_tb.sv|+cover|-covercells|
+!i113 0
+Z9 !s102 +cover -covercells
+Z10 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vram_tb
+R2
+R3
+!i10b 1
+!s100 5lC6cKWo[4Z;1;ALkUQU?2
+IK_k`4;Uda>GJiSa=flN]g1
+S1
+R4
+w1726472822
+8ram_tb.sv
+Fram_tb.sv
+!i122 2
+L0 3 94
+R5
+R6
+r1
+!s85 0
+31
+R7
+Z11 !s107 ram_tb.sv|ram.sv|
+R8
+!i113 0
+R9
+R10
+R1

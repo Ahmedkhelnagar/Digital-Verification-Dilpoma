@@ -1,0 +1,505 @@
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 17:04:14 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 3940181869
+# ** Error: Assertion error.
+#    Time: 5 ns Started: 3 ns  Scope: priority_enc_tb.p6_pro File: priority_enc_tb.sv Line: 51
+# ** Note: $stop    : priority_enc_tb.sv(73)
+#    Time: 204 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 73
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 17:07:39 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 17:07:40 on Sep 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 17:07:53 on Sep 21,2024, Elapsed time: 0:03:39
+# Errors: 3, Warnings: 3
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 17:07:54 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 2532983373
+# ** Error: Assertion error.
+#    Time: 5 ns Started: 3 ns  Scope: priority_enc_tb.p6_pro File: priority_enc_tb.sv Line: 51
+# ** Note: $stop    : priority_enc_tb.sv(73)
+#    Time: 204 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 73
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 17:12:05 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 17:12:05 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 17:12:09 on Sep 21,2024, Elapsed time: 0:04:15
+# Errors: 3, Warnings: 1
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 17:12:10 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 4160408593
+# ** Error: Assertion error.
+#    Time: 3 ns Started: 3 ns  Scope: priority_enc_tb.p6_pro File: priority_enc_tb.sv Line: 51
+# ** Note: $stop    : priority_enc_tb.sv(73)
+#    Time: 204 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 73
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 17:20:07 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 17:20:07 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 17:20:22 on Sep 21,2024, Elapsed time: 0:08:12
+# Errors: 3, Warnings: 1
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 17:20:22 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 2241519869
+# ** Error: Assertion error.
+#    Time: 5 ns Started: 3 ns  Scope: priority_enc_tb.p6_pro File: priority_enc_tb.sv Line: 51
+# ** Note: $stop    : priority_enc_tb.sv(73)
+#    Time: 204 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 73
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 17:21:10 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 17:21:10 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 17:21:15 on Sep 21,2024, Elapsed time: 0:00:53
+# Errors: 3, Warnings: 1
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 17:21:15 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 2361034965
+# ** Error: Assertion error.
+#    Time: 3 ns Started: 3 ns  Scope: priority_enc_tb.p6_pro File: priority_enc_tb.sv Line: 51
+# ** Note: $stop    : priority_enc_tb.sv(73)
+#    Time: 204 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 73
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 17:30:38 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 17:30:38 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 17:30:43 on Sep 21,2024, Elapsed time: 0:09:28
+# Errors: 3, Warnings: 1
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 17:30:46 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 3304792481
+# ** Error: Assertion error.
+#    Time: 5 ns Started: 3 ns  Scope: priority_enc_tb.p6_pro File: priority_enc_tb.sv Line: 52
+# ** Note: $stop    : priority_enc_tb.sv(74)
+#    Time: 204 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 74
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 17:33:53 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 17:33:53 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 17:33:58 on Sep 21,2024, Elapsed time: 0:03:12
+# Errors: 3, Warnings: 1
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 17:33:58 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 3854240657
+# ** Error: Assertion error.
+#    Time: 5 ns Started: 3 ns  Scope: priority_enc_tb.p6_pro File: priority_enc_tb.sv Line: 52
+# ** Note: $stop    : priority_enc_tb.sv(74)
+#    Time: 204 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 74
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 17:40:23 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 17:40:23 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+#  Læ  
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 17:40:29 on Sep 21,2024, Elapsed time: 0:06:31
+# Errors: 3, Warnings: 1
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 17:40:29 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 4133191629
+# ** Error: Assertion error.
+#    Time: 3 ns Started: 1 ns  Scope: priority_enc_tb.p6_pro File: priority_enc_tb.sv Line: 52
+# ** Note: $stop    : priority_enc_tb.sv(75)
+#    Time: 204 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 75
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 17:51:59 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 17:51:59 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 17:52:03 on Sep 21,2024, Elapsed time: 0:11:34
+# Errors: 3, Warnings: 1
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 17:52:04 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 4015776517
+# p6 is failing,D = 4,Y = 1
+# ** Note: $stop    : priority_enc_tb.sv(75)
+#    Time: 204 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 75
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 17:53:28 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 17:53:28 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 17:53:33 on Sep 21,2024, Elapsed time: 0:01:29
+# Errors: 2, Warnings: 1
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 17:53:33 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 3743149497
+# p6 is failing,D = 4,Y = 1,valid = 1
+# ** Note: $stop    : priority_enc_tb.sv(75)
+#    Time: 204 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 75
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 17:56:07 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 17:56:07 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 17:56:11 on Sep 21,2024, Elapsed time: 0:02:38
+# Errors: 2, Warnings: 1
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 17:56:11 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 3380314637
+# p6 is failing,D = 4,Y = 1,valid = 1
+# ** Note: $stop    : priority_enc_tb.sv(75)
+#    Time: 204 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 75
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 17:56:55 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 17:56:55 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 17:57:00 on Sep 21,2024, Elapsed time: 0:00:49
+# Errors: 2, Warnings: 1
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 17:57:00 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 3285966121
+# p6 is failing,D = 4,Y = 1,valid = 1
+# ** Note: $stop    : priority_enc_tb.sv(75)
+#    Time: 204 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 75
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:10:37 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 18:10:37 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 18:10:46 on Sep 21,2024, Elapsed time: 0:13:46
+# Errors: 2, Warnings: 1
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 18:10:46 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 2879159921
+# ** Note: $stop    : priority_enc_tb.sv(124)
+#    Time: 36 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 124
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:11:30 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 18:11:30 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 18:11:35 on Sep 21,2024, Elapsed time: 0:00:49
+# Errors: 2, Warnings: 1
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 18:11:35 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 3038536553
+# p6 is failing,D = 0,Y = 0,valid = 0
+# ** Note: $stop    : priority_enc_tb.sv(124)
+#    Time: 36 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 124
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:13:26 on Sep 21,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 18:13:27 on Sep 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 18:13:31 on Sep 21,2024, Elapsed time: 0:01:56
+# Errors: 2, Warnings: 1
+# vsim -voptargs="+acc" work.priority_enc_tb -coverage -sv_seed random -l sim.log 
+# Start time: 18:13:31 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.priority_enc_tb(fast)
+# Loading work.priority_enc(fast)
+# Sv_Seed = 3587991945
+# ** Note: $stop    : priority_enc_tb.sv(124)
+#    Time: 204 ns  Iteration: 1  Instance: /priority_enc_tb
+# Break in Module priority_enc_tb at priority_enc_tb.sv line 124
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/Problem3_encoder.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 18:20:17 on Sep 21,2024, Elapsed time: 0:06:46
+# Errors: 2, Warnings: 1
+vcover report priority_encoder_tb.ucdb -details -annotate -all -output cover_rpt.txt
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 18:21:31 on Sep 21,2024
+# vcover report priority_encoder_tb.ucdb -details -annotate -all -output cover_rpt.txt 
+# ** Error: (vcover-7) Failed to open UCDB file "priority_encoder_tb.ucdb" in read mode.
+# ** Note: (vcover-17388) No matching coverage data found in file 'priority_encoder_tb.ucdb'.
+# End time: 18:21:31 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcover report priority_enc_tb.ucdb -details -annotate -all -output cover_rpt.txt
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 18:22:56 on Sep 21,2024
+# vcover report priority_enc_tb.ucdb -details -annotate -all -output cover_rpt.txt 
+# End time: 18:22:56 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# reading C:/questasim64_2021.1/win64/../modelsim.ini
+# Loading project Problem3_Alu

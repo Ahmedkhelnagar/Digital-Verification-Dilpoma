@@ -1,0 +1,133 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/Digital Design/KW Course/Verification/VF.Session 3/Assignment_3/Problem_3
+T_opt
+!s110 1726995586
+V`DLjNGnCLEiPhAjEH:_PI0
+04 7 4 work ALSU_tb fast 0
+=1-e454e84764da-66efdc7e-330-34e8
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+R1
+vALSU
+Z3 !s110 1726996000
+!i10b 1
+!s100 T_DYA@@Vaj6f9>?LFDdd53
+I]neMlV_a7UkHPl?PMc9cA0
+Z4 dD:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_1
+w1726050853
+8ALSU.v
+FALSU.v
+!i122 22
+L0 1 123
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z7 !s108 1726996000.000000
+!s107 ALSU_tb.sv|ALSU.v|package.sv|
+Z8 !s90 -reportprogress|300|package.sv|ALSU.v|ALSU_tb.sv|+cover|-covercells|
+!i113 0
+Z9 !s102 +cover -covercells
+Z10 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@a@l@s@u
+Xalsu_pkg
+Z11 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R3
+!i10b 1
+!s100 NAn_<dNEc4RSdQY0l;doQ3
+I:G@Z=kYC3O6zgQNl0>h1L1
+S1
+R4
+w1726837952
+8package.sv
+Fpackage.sv
+!i122 22
+Z12 L0 3 0
+V:G@Z=kYC3O6zgQNl0>h1L1
+R6
+r1
+!s85 0
+31
+R7
+Z13 !s107 ALSU_tb.sv|ALSU.v|package.sv|
+R8
+!i113 0
+R9
+R10
+R2
+vALSU_tb
+R11
+Z14 DXx4 work 8 alsu_pkg 0 22 :G@Z=kYC3O6zgQNl0>h1L1
+DXx4 work 15 ALSU_tb_sv_unit 0 22 h5Dl[mZcRTeaJ4E_?fJ7>3
+R3
+R5
+r1
+!s85 0
+!i10b 1
+!s100 DI3[hzhR;nLiAV0Y5fgj=1
+I]MLHBCAUdU1DHN>i`K@Vm2
+!s105 ALSU_tb_sv_unit
+S1
+R4
+Z15 w1726989466
+Z16 8ALSU_tb.sv
+Z17 FALSU_tb.sv
+!i122 22
+L0 5 217
+R6
+31
+R7
+R13
+R8
+!i113 0
+R9
+R10
+R2
+n@a@l@s@u_tb
+XALSU_tb_sv_unit
+R11
+R14
+R3
+Vh5Dl[mZcRTeaJ4E_?fJ7>3
+r1
+!s85 0
+!i10b 1
+!s100 oSh05TCVP6TAkklz:c[6G0
+Ih5Dl[mZcRTeaJ4E_?fJ7>3
+!i103 1
+S1
+R4
+R15
+R16
+R17
+!i122 22
+R12
+R6
+31
+R7
+R13
+R8
+!i113 0
+R9
+R10
+R2
+n@a@l@s@u_tb_sv_unit

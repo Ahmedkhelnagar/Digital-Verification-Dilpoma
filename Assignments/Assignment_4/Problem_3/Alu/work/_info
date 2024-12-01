@@ -1,0 +1,83 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder
+T_opt
+!s110 1726934878
+VCTl9g3TWjmO4jE:]DbhRf2
+04 12 4 work ALU_4_bit_tb fast 0
+=1-e454e84764da-66eeef5e-2a0-3f68
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+R1
+vALU_4_bit
+Z3 !s110 1726936899
+!i10b 1
+!s100 F`Y[W>e:FM630FfaX]=9[1
+IB@L83ACnLQG9=@bzOX__61
+Z4 dD:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu
+w1724968138
+8ALU_4_bit.v
+FALU_4_bit.v
+!i122 18
+L0 1 38
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z7 !s108 1726936898.000000
+!s107 ALU_4_bit_tb.sv|ALU_4_bit.v|
+Z8 !s90 -reportprogress|300|ALU_4_bit.v|ALU_4_bit_tb.sv|+cover|-covercells|
+!i113 0
+Z9 !s102 +cover -covercells
+Z10 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@a@l@u_4_bit
+vALU_4_bit_tb
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R3
+!i10b 1
+!s100 ;`<IRLNYT5[kR0QDi2nSU0
+I8Kl34S`k;<kkYLa2TcaWm1
+S1
+R4
+w1726934869
+8ALU_4_bit_tb.sv
+FALU_4_bit_tb.sv
+!i122 18
+L0 3 194
+R5
+R6
+r1
+!s85 0
+31
+R7
+Z11 !s107 ALU_4_bit_tb.sv|ALU_4_bit.v|
+R8
+!i113 0
+R9
+R10
+R2
+n@a@l@u_4_bit_tb

@@ -1,0 +1,285 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /\counter_top#d1 /counter_sva_instance
+=== Design Unit: work.counter_sva
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       7         7         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/\counter_top#d1 /counter_sva_instance/a_reset
+                     counter_sva.sv(6)                  0          1
+/\counter_top#d1 /counter_sva_instance/a_zero
+                     counter_sva.sv(8)                  0          1
+/\counter_top#d1 /counter_sva_instance/a_maxCount
+                     counter_sva.sv(10)                 0          1
+/\counter_top#d1 /counter_sva_instance/assert_load_active
+                     counter_sva.sv(29)                 0          1
+/\counter_top#d1 /counter_sva_instance/assert_load_not_active
+                     counter_sva.sv(30)                 0          1
+/\counter_top#d1 /counter_sva_instance/assert_increment_count
+                     counter_sva.sv(31)                 0          1
+/\counter_top#d1 /counter_sva_instance/assert_decrement_count
+                     counter_sva.sv(32)                 0          1
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         6         6         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\counter_top#d1 /counter_sva_instance
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File counter_sva.sv
+------------------------------------IF Branch------------------------------------
+    5                                       9129     Count coming in to IF
+    5               1                        396             if(!co_if.rst_n)
+                                            8733     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                       9129     Count coming in to IF
+    7               1                        935             if(co_if.count_out == 0)
+                                            8194     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    9                                       9129     Count coming in to IF
+    9               1                        541             if(co_if.count_out == {co_if.WIDTH{1'b1}})
+                                            8588     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         2         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /\counter_top#d1 /counter_sva_instance --
+
+  File counter_sva.sv
+----------------Focused Condition View-------------------
+Line       7 Item    1  (co_if.count_out == 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (co_if.count_out == 0)         Y
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:          1  (co_if.count_out == 0)_0  -                             
+  Row   2:          1  (co_if.count_out == 0)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       9 Item    1  (co_if.count_out == {4{1}})
+Condition totals: 1 of 1 input term covered = 100.00%
+
+                   Input Term   Covered  Reason for no coverage   Hint
+                  -----------  --------  -----------------------  --------------
+  (co_if.count_out == {4{1}})         Y
+
+     Rows:       Hits  FEC Target                     Non-masking condition(s)      
+ ---------  ---------  --------------------           -------------------------     
+  Row   1:          1  (co_if.count_out == {4{1}})_0  -                             
+  Row   2:          1  (co_if.count_out == {4{1}})_1  -                             
+
+
+
+Directive Coverage:
+    Directives                       4         4         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\counter_top#d1 /counter_sva_instance/cover_load_active 
+                                         counter_sva Verilog  SVA  counter_sva.sv(34)
+                                                                              6766 Covered   
+/\counter_top#d1 /counter_sva_instance/cover_load_not_active 
+                                         counter_sva Verilog  SVA  counter_sva.sv(35)
+                                                                               820 Covered   
+/\counter_top#d1 /counter_sva_instance/cover_increment_count 
+                                         counter_sva Verilog  SVA  counter_sva.sv(36)
+                                                                               985 Covered   
+/\counter_top#d1 /counter_sva_instance/cover_decrement_count 
+                                         counter_sva Verilog  SVA  counter_sva.sv(37)
+                                                                              1020 Covered   
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       1         1         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\counter_top#d1 /counter_sva_instance --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File counter_sva.sv
+    3                                                module counter_sva(interface_counter.DUT co_if);
+    4               1                       9129        always_comb begin
+
+
+=================================================================================
+=== Instance: /\counter_top#d1 
+=== Design Unit: work.counter
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10        10         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\counter_top#d1 
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File counter.sv
+------------------------------------IF Branch------------------------------------
+    11                                     10203     Count coming in to IF
+    11              1                        410         if(!co_if.rst_n)
+    13              1                       6906         else if (!co_if.load_n)
+    15              1                       2048         else if (co_if.ce)
+                                             839     All False Count
+Branch totals: 4 hits of 4 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    16                                      2048     Count coming in to IF
+    16              1                       1009             if (co_if.up_down)
+    18              1                       1039             else 
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    22                                      8724     Count coming in to IF
+    22              1                        522     assign co_if.max_count = (co_if.count_out == {co_if.WIDTH{1'b1}})? 1:0;
+    22              2                       8202     assign co_if.max_count = (co_if.count_out == {co_if.WIDTH{1'b1}})? 1:0;
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    23                                      8724     Count coming in to IF
+    23              1                        725     assign co_if.zero = (co_if.count_out == 0)? 1:0;
+    23              2                       7999     assign co_if.zero = (co_if.count_out == 0)? 1:0;
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         2         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /\counter_top#d1  --
+
+  File counter.sv
+----------------Focused Condition View-------------------
+Line       22 Item    1  (co_if.count_out == {co_if.WIDTH{1}})
+Condition totals: 1 of 1 input term covered = 100.00%
+
+                             Input Term   Covered  Reason for no coverage   Hint
+                            -----------  --------  -----------------------  --------------
+  (co_if.count_out == {co_if.WIDTH{1}})         Y
+
+     Rows:       Hits  FEC Target                               Non-masking condition(s)      
+ ---------  ---------  --------------------                     -------------------------     
+  Row   1:          1  (co_if.count_out == {co_if.WIDTH{1}})_0  -                             
+  Row   2:          1  (co_if.count_out == {co_if.WIDTH{1}})_1  -                             
+
+----------------Focused Condition View-------------------
+Line       23 Item    1  (co_if.count_out == 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+              Input Term   Covered  Reason for no coverage   Hint
+             -----------  --------  -----------------------  --------------
+  (co_if.count_out == 0)         Y
+
+     Rows:       Hits  FEC Target                Non-masking condition(s)      
+ ---------  ---------  --------------------      -------------------------     
+  Row   1:          1  (co_if.count_out == 0)_0  -                             
+  Row   2:          1  (co_if.count_out == 0)_1  -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       7         7         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\counter_top#d1  --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File counter.sv
+    8                                                module counter (interface_counter.DUT co_if);
+    9                                                
+    10              1                      10203     always @(posedge co_if.clk or negedge co_if.rst_n) begin
+    11                                                   if(!co_if.rst_n)
+    12              1                        410             co_if.count_out <= 0;
+    13                                                   else if (!co_if.load_n)
+    14              1                       6906             co_if.count_out <= co_if.data_load;
+    15                                                   else if (co_if.ce)
+    16                                                       if (co_if.up_down)
+    17              1                       1009                 co_if.count_out <= co_if.count_out + 1;
+    18                                                       else 
+    19              1                       1039                 co_if.count_out <= co_if.count_out - 1;
+    20                                               end
+    21                                               
+    22              1                       8725     assign co_if.max_count = (co_if.count_out == {co_if.WIDTH{1'b1}})? 1:0;
+    23              1                       8725     assign co_if.zero = (co_if.count_out == 0)? 1:0;
+
+
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/\counter_top#d1 /counter_sva_instance/cover_load_active 
+                                         counter_sva Verilog  SVA  counter_sva.sv(34)
+                                                                              6766 Covered   
+/\counter_top#d1 /counter_sva_instance/cover_load_not_active 
+                                         counter_sva Verilog  SVA  counter_sva.sv(35)
+                                                                               820 Covered   
+/\counter_top#d1 /counter_sva_instance/cover_increment_count 
+                                         counter_sva Verilog  SVA  counter_sva.sv(36)
+                                                                               985 Covered   
+/\counter_top#d1 /counter_sva_instance/cover_decrement_count 
+                                         counter_sva Verilog  SVA  counter_sva.sv(37)
+                                                                              1020 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 4
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/\counter_top#d1 /counter_sva_instance/a_reset
+                     counter_sva.sv(6)                  0          1
+/\counter_top#d1 /counter_sva_instance/a_zero
+                     counter_sva.sv(8)                  0          1
+/\counter_top#d1 /counter_sva_instance/a_maxCount
+                     counter_sva.sv(10)                 0          1
+/\counter_top#d1 /counter_sva_instance/assert_load_active
+                     counter_sva.sv(29)                 0          1
+/\counter_top#d1 /counter_sva_instance/assert_load_not_active
+                     counter_sva.sv(30)                 0          1
+/\counter_top#d1 /counter_sva_instance/assert_increment_count
+                     counter_sva.sv(31)                 0          1
+/\counter_top#d1 /counter_sva_instance/assert_decrement_count
+                     counter_sva.sv(32)                 0          1
+
+Total Coverage By Instance (filtered view): 100.00%
+

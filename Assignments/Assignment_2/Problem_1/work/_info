@@ -1,0 +1,48 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Digital Design/KW Course/Verification/VF.Session 1/Assignment_1/Problem_4
+T_opt
+!s110 1725484110
+V2T<?C9d;mQ=mclE:j9;7o2
+04 11 4 work dynamic_arr fast 0
+=1-e454e84764da-66d8cc4e-240-485c
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vdynamic_arr
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1725484105
+!i10b 1
+!s100 abCg[]jK;d2:0bo3]Hg?c1
+IbQR8EXlm0KP1;O97>P1j<1
+S1
+dD:/Digital Design/KW Course/Verification/VF.Session 2/Assignment_2/Problem_1
+w1725484098
+8D:/Digital Design/KW Course/Verification/VF.Session 2/Assignment_2/Problem_1/dynamic_arr.sv
+FD:/Digital Design/KW Course/Verification/VF.Session 2/Assignment_2/Problem_1/dynamic_arr.sv
+!i122 3
+L0 3 22
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2021.1;73
+r1
+!s85 0
+31
+!s108 1725484105.000000
+!s107 D:/Digital Design/KW Course/Verification/VF.Session 2/Assignment_2/Problem_1/dynamic_arr.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/Digital Design/KW Course/Verification/VF.Session 2/Assignment_2/Problem_1/dynamic_arr.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1

@@ -1,0 +1,24 @@
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 16:01:05 on Sep 20,2024
+# vlog -reportprogress 300 package.sv ALSU.v ALSU_tb.sv "+cover" -covercells 
+# -- Compiling package alsu_pkg
+# ** Warning: package.sv(130): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(139): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(152): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(164): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(176): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(187): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(197): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(203): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# -- Compiling module ALSU
+# -- Compiling package ALSU_tb_sv_unit
+# -- Importing package alsu_pkg
+# -- Compiling module ALSU_tb
+# 
+# Top level modules:
+# 	ALSU_tb
+# End time: 16:01:05 on Sep 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8

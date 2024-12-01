@@ -1,0 +1,280 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /ram_tb/DUT
+=== Design Unit: work.my_mem
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         3         3         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /ram_tb/DUT
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ram.sv
+------------------------------------IF Branch------------------------------------
+    16                                       202     Count coming in to IF
+    16              1                        100         if(write)
+    18              1                        100         else if(read)
+                                               2     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       3         3         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /ram_tb/DUT --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ram.sv
+    3                                                module my_mem(
+    4                                                    input clk,
+    5                                                    input write,
+    6                                                    input read,
+    7                                                    input [7:0] data_in,
+    8                                                    input [15:0] address,
+    9                                                    output reg [8:0] data_out
+    10                                               );
+    11                                               
+    12                                               //associative array
+    13                                               logic[8:0]mem_array[int];
+    14                                               
+    15              1                        202     always @(posedge clk)begin
+    16                                                   if(write)
+    17              1                        100         mem_array[address] = {^data_in,data_in};
+    18                                                   else if(read)
+    19              1                        100         data_out = mem_array[address];
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         72        72         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /ram_tb/DUT --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                     address[0-15]           1           1      100.00 
+                                               clk           1           1      100.00 
+                                      data_in[0-7]           1           1      100.00 
+                                     data_out[8-0]           1           1      100.00 
+                                              read           1           1      100.00 
+                                             write           1           1      100.00 
+
+Total Node Count     =         36 
+Toggled Node Count   =         36 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (72 of 72 bins)
+
+=================================================================================
+=== Instance: /ram_tb
+=== Design Unit: work.ram_tb
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         1         1    50.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /ram_tb
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ram_tb.sv
+------------------------------------IF Branch------------------------------------
+    88                                       100     Count coming in to IF
+    88              1                    ***0***             if(data_read_expect_assoc[address] !== data_out)begin
+    92              1                        100             else begin
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       2         1         1    50.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /ram_tb --
+
+  File ram_tb.sv
+----------------Focused Condition View-------------------
+Line       78 Item    1  (size(data_read_queue) != 0)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+                    Input Term   Covered  Reason for no coverage   Hint
+                   -----------  --------  -----------------------  --------------
+  (size(data_read_queue) != 0)         Y
+
+     Rows:       Hits  FEC Target                      Non-masking condition(s)      
+ ---------  ---------  --------------------            -------------------------     
+  Row   1:          1  (size(data_read_queue) != 0)_0  -                             
+  Row   2:          1  (size(data_read_queue) != 0)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       88 Item    1  (data_read_expect_assoc[address] !== data_out)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                                      Input Term   Covered  Reason for no coverage   Hint
+                                     -----------  --------  -----------------------  --------------
+  (data_read_expect_assoc[address] !== data_out)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                                        Non-masking condition(s)      
+ ---------  ---------  --------------------                              -------------------------     
+  Row   1:          1  (data_read_expect_assoc[address] !== data_out)_0  -                             
+  Row   2:    ***0***  (data_read_expect_assoc[address] !== data_out)_1  -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      40        38         2    95.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /ram_tb --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ram_tb.sv
+    3                                                module ram_tb;
+    4                                                    /***********Parameters***********/
+    5                                                    localparam TESTS = 100;
+    6                                                
+    7                                                    /**************signal declaration****/
+    8                                                    //Inputs port
+    9                                                    bit clk,write,read;
+    10                                                   bit [7:0]data_in;
+    11                                                   bit [15:0]address;
+    12                                                   //output port
+    13                                                   logic [8:0]data_out;
+    14                                               
+    15                                                   /*********Dynamic arrays************/
+    16                                                   bit [15:0]address_array[];
+    17                                                   bit [7:0]data_to_write_array[];
+    18                                                   //Associative arrays
+    19                                                   bit [8:0]data_read_expect_assoc[int];
+    20                                                   //Queues
+    21                                                   logic [8:0]data_read_queue[$];
+    22                                               
+    23                                                   /************Variables*********/
+    24                                                   integer correct_count = 0;
+    25                                                   integer error_count = 0;
+    26                                               
+    27                                                   /************module instantiation*********/
+    28                                                   my_mem DUT(.*);
+    29                                               
+    30                                                   /***********clock generation*******/
+    31                                                   initial begin
+    32              1                          1             clk = 0;
+    33              1                          1             forever begin
+    34              1                        405                 #5 clk = ~clk;
+    34              2                        404     
+    35                                                       end
+    36                                                   end
+    37                                               
+    38                                                   /***********Test stimulus generation**********/
+    39                                                   initial begin
+    40              1                          1             write = 0;
+    41              1                          1             read = 0;
+    42                                               
+    43              1                          1             address_array = new[TESTS];
+    44              1                          1             data_to_write_array = new[TESTS];
+    45                                               
+    46                                                       /*prepare the address that will be written in the memory,
+    47                                                        as well as the data*/
+    48              1                          1             for(integer i = 0;i<TESTS;i++)begin
+    48              2                        100     
+    49              1                        100                 address_array[i] =$random;
+    50              1                        100                 data_to_write_array[i] =$random;
+    51                                                       end
+    52                                               
+    53                                                       //recieve the data
+    54              1                          1             for(integer i = 0;i<TESTS;i++)begin
+    54              2                        100     
+    55              1                        100                 data_read_expect_assoc[address_array[i]] = {^data_to_write_array[i],data_to_write_array[i]}; 
+    56                                                       end
+    57                                               
+    58                                                       /***in the above we just prepare the address and the data that will be used in the test***/
+    59              1                          1             @(negedge clk);
+    60              1                          1             write = 1;
+    61              1                          1             for(integer i = 0;i<TESTS;i++)begin
+    61              2                        100     
+    62              1                        100                 address = address_array[i];
+    63              1                        100                 data_in = data_to_write_array[i];
+    64              1                        100                 @(negedge clk);
+    65                                                       end
+    66                                               
+    67              1                          1             write = 0;
+    68              1                          1             read  = 1;
+    69              1                          1             for(integer i = 0;i<TESTS;i++)begin
+    69              2                        100     
+    70              1                        100                 address = address_array[i];
+    71              1                        100                 check_dataOut(address);
+    72              1                        100                 data_read_queue.push_back(data_out);
+    73                                                       end
+    74                                               
+    75              1                          1             read = 0;
+    76              1                          1             @(negedge clk);
+    77              1                          1             $display("data in the queue are:");
+    78              1                        101             while(data_read_queue.size != 0)
+    79              1                        100                 $display(data_read_queue.pop_front());
+    80                                               
+    81              1                          1             $display("At the end of the test, correct_count = %0d,error_count = %0d",correct_count,error_count);
+    82              1                          1             $stop;
+    83                                                   end
+    84                                               
+    85                                                   /****task to check the outputs*****/
+    86                                                   task check_dataOut(bit [15:0]address);
+    87              1                        100             @(negedge clk);
+    88                                                       if(data_read_expect_assoc[address] !== data_out)begin
+    89              1                    ***0***                 $$display("Error !!,address = %0h,expected_value = %0h,data_out =%0h",address,data_read_expect_assoc[address],data_out);
+    90              1                    ***0***                 error_count++;
+    91                                                       end
+    92                                                       else begin
+    93              1                        100                 correct_count++;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        200        85       115    42.50%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /ram_tb --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                     address[0-15]           1           1      100.00 
+                                               clk           1           1      100.00 
+                                correct_count[0-5]           1           1      100.00 
+                                  correct_count[6]           0           1       50.00 
+                               correct_count[7-31]           0           0        0.00 
+                                      data_in[0-7]           1           1      100.00 
+                                     data_out[0-8]           1           1      100.00 
+                                 error_count[0-31]           0           0        0.00 
+                                              read           1           1      100.00 
+                                             write           1           1      100.00 
+
+Total Node Count     =        100 
+Toggled Node Count   =         42 
+Untoggled Node Count =         58 
+
+Toggle Coverage      =      42.50% (85 of 200 bins)
+
+
+Total Coverage By Instance (filtered view): 70.76%
+

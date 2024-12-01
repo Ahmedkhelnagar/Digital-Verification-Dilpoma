@@ -1,0 +1,15 @@
+{D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/priority_enc.v} {1 {vlog -work work -vopt -stats=none {D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/priority_enc.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module priority_enc
+
+Top level modules:
+	priority_enc
+
+} {} {}} {D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/priority_enc_tb.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder/priority_enc_tb.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module priority_enc_tb
+
+Top level modules:
+	priority_enc_tb
+
+} {} {}}

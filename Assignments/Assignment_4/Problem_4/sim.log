@@ -1,0 +1,504 @@
+vsim -voptargs=+acc -coverage -sv_seed random -l sim.log work.counter_top
+# vsim -voptargs="+acc" -coverage -sv_seed random -l sim.log work.counter_top 
+# Start time: 21:22:45 on Sep 21,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.counter_top(fast)
+# Loading work.interface_counter(fast__1)
+# Loading work.counter(fast)
+# Loading work.counter_sva(fast)
+# Loading work.pkg_constraint(fast)
+# Loading work.counter_tb_sv_unit(fast)
+# Loading work.counter_tb(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# Sv_Seed = 3154244633
+run -all
+# ** Note: $stop    : D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/counter_tb.sv(26)
+#    Time: 0 ns  Iteration: 1  Instance: /counter_top/tb1
+# Break in Module counter_tb at D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/counter_tb.sv line 26
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.counter_top(fast)
+# Loading work.interface_counter(fast__1)
+# Loading work.counter(fast)
+# Loading work.counter_sva(fast)
+# Loading work.pkg_constraint(fast)
+# Loading work.counter_tb_sv_unit(fast)
+# Loading work.counter_tb(fast)
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# End time: 21:25:56 on Sep 21,2024, Elapsed time: 0:03:11
+# Errors: 2, Warnings: 2
+# Compile of counter_tb.sv was successful.
+vsim -voptargs=+acc work.counter_top
+# vsim -voptargs="+acc" work.counter_top 
+# Start time: 21:26:16 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.counter_top(fast)
+# Loading work.interface_counter(fast__1)
+# Loading work.counter(fast)
+# Loading work.counter_sva(fast)
+# Loading work.pkg_constraint(fast)
+# Loading work.counter_tb_sv_unit(fast)
+# Loading work.counter_tb(fast)
+run -all
+# ** Error: Assertion error.
+#    Time: 0 ns  Scope: counter_top.d1.counter_sva_instance.a_reset File: D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/counter_sva.sv Line: 6
+# ** Note: $stop    : D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/counter_tb.sv(26)
+#    Time: 2 ns  Iteration: 1  Instance: /counter_top/tb1
+# Break in Module counter_tb at D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/counter_tb.sv line 26
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 21:36:07 on Sep 21,2024
+# vlog -reportprogress 300 pkg_constraint.sv monitor_counter.sv interface_counter.sv counter.sv counter_top.sv counter_tb.sv counter_sva.sv "+cover" -covercells 
+# -- Compiling package pkg_constraint
+# -- Compiling module monitor_counter
+# -- Compiling interface interface_counter
+# -- Compiling module counter
+# -- Compiling module counter_top
+# ** Warning: counter_tb.sv(3): (vlog-13233) Design unit "counter_tb_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
+# -- Compiling package counter_tb_sv_unit
+# -- Importing package pkg_constraint
+# -- Compiling module counter_tb
+# -- Compiling module counter_sva
+# 
+# Top level modules:
+# 	monitor_counter
+# 	counter_top
+# End time: 21:36:07 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# End time: 21:36:16 on Sep 21,2024, Elapsed time: 0:10:00
+# Errors: 3, Warnings: 2
+# vsim -voptargs="+acc" work.counter_top -coverage -sv_seed random -l sim.log 
+# Start time: 21:36:17 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.counter_top(fast)
+# Loading work.interface_counter(fast__1)
+# Loading work.counter(fast)
+# Loading work.counter_sva(fast)
+# Loading work.pkg_constraint(fast)
+# Loading work.counter_tb_sv_unit(fast)
+# Loading work.counter_tb(fast)
+# Sv_Seed = 3221359449
+# ** Error: Assertion error.
+#    Time: 0 ns  Scope: counter_top.d1.counter_sva_instance.a_reset File: counter_sva.sv Line: 6
+# ** Note: $stop    : counter_tb.sv(26)
+#    Time: 2 ns  Iteration: 1  Instance: /counter_top/tb1
+# Break in Module counter_tb at counter_tb.sv line 26
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 21:38:17 on Sep 21,2024
+# vlog -reportprogress 300 pkg_constraint.sv monitor_counter.sv interface_counter.sv counter.sv counter_top.sv counter_tb.sv counter_sva.sv "+cover" -covercells 
+# -- Compiling package pkg_constraint
+# -- Compiling module monitor_counter
+# -- Compiling interface interface_counter
+# -- Compiling module counter
+# -- Compiling module counter_top
+# -- Compiling package counter_tb_sv_unit
+# -- Importing package pkg_constraint
+# -- Compiling module counter_tb
+# -- Compiling module counter_sva
+# 
+# Top level modules:
+# 	monitor_counter
+# 	counter_top
+# End time: 21:38:17 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# $
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 21:38:27 on Sep 21,2024, Elapsed time: 0:02:10
+# Errors: 3, Warnings: 1
+# vsim -voptargs="+acc" work.counter_top -coverage -sv_seed random -l sim.log 
+# Start time: 21:38:28 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.counter_top(fast)
+# Loading work.interface_counter(fast__1)
+# Loading work.counter(fast)
+# Loading work.counter_sva(fast)
+# Loading work.pkg_constraint(fast)
+# Loading work.counter_tb_sv_unit(fast)
+# Loading work.counter_tb(fast)
+# Sv_Seed = 3814879321
+# ** Error: Assertion error.
+#    Time: 0 ns  Scope: counter_top.d1.counter_sva_instance.a_reset File: counter_sva.sv Line: 6
+# ** Note: $stop    : counter_tb.sv(26)
+#    Time: 2 ns  Iteration: 1  Instance: /counter_top/tb1
+# Break in Module counter_tb at counter_tb.sv line 26
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 21:39:39 on Sep 21,2024
+# vlog -reportprogress 300 pkg_constraint.sv monitor_counter.sv interface_counter.sv counter.sv counter_top.sv counter_tb.sv counter_sva.sv "+cover" -covercells 
+# -- Compiling package pkg_constraint
+# -- Compiling module monitor_counter
+# -- Compiling interface interface_counter
+# -- Compiling module counter
+# -- Compiling module counter_top
+# -- Compiling package counter_tb_sv_unit
+# -- Importing package pkg_constraint
+# -- Compiling module counter_tb
+# -- Compiling module counter_sva
+# 
+# Top level modules:
+# 	monitor_counter
+# 	counter_top
+# End time: 21:39:39 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# $
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 21:39:50 on Sep 21,2024, Elapsed time: 0:01:22
+# Errors: 3, Warnings: 1
+# vsim -voptargs="+acc" work.counter_top -coverage -sv_seed random -l sim.log 
+# Start time: 21:39:50 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.counter_top(fast)
+# Loading work.interface_counter(fast__1)
+# Loading work.counter(fast)
+# Loading work.counter_sva(fast)
+# Loading work.pkg_constraint(fast)
+# Loading work.counter_tb_sv_unit(fast)
+# Loading work.counter_tb(fast)
+# Sv_Seed = 3540140221
+# ** Note: $stop    : counter_tb.sv(26)
+#    Time: 2 ns  Iteration: 1  Instance: /counter_top/tb1
+# Break in Module counter_tb at counter_tb.sv line 26
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 21:41:28 on Sep 21,2024
+# vlog -reportprogress 300 pkg_constraint.sv monitor_counter.sv interface_counter.sv counter.sv counter_top.sv counter_tb.sv counter_sva.sv "+cover" -covercells 
+# -- Compiling package pkg_constraint
+# -- Compiling module monitor_counter
+# -- Compiling interface interface_counter
+# -- Compiling module counter
+# -- Compiling module counter_top
+# -- Compiling package counter_tb_sv_unit
+# -- Importing package pkg_constraint
+# -- Compiling module counter_tb
+# -- Compiling module counter_sva
+# 
+# Top level modules:
+# 	monitor_counter
+# 	counter_top
+# End time: 21:41:28 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 21:41:37 on Sep 21,2024, Elapsed time: 0:01:47
+# Errors: 2, Warnings: 1
+# vsim -voptargs="+acc" work.counter_top -coverage -sv_seed random -l sim.log 
+# Start time: 21:41:37 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.counter_top(fast)
+# Loading work.interface_counter(fast__1)
+# Loading work.counter(fast)
+# Loading work.counter_sva(fast)
+# Loading work.pkg_constraint(fast)
+# Loading work.counter_tb_sv_unit(fast)
+# Loading work.counter_tb(fast)
+# Sv_Seed = 3523376285
+# ** Error: Assertion error.
+#    Time: 0 ns  Scope: counter_top.d1.counter_sva_instance.a_reset File: counter_sva.sv Line: 6
+# ** Note: $stop    : counter_tb.sv(26)
+#    Time: 2 ns  Iteration: 1  Instance: /counter_top/tb1
+# Break in Module counter_tb at counter_tb.sv line 26
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 21:48:26 on Sep 21,2024
+# vlog -reportprogress 300 pkg_constraint.sv monitor_counter.sv interface_counter.sv counter.sv counter_top.sv counter_tb.sv counter_sva.sv "+cover" -covercells 
+# -- Compiling package pkg_constraint
+# -- Compiling module monitor_counter
+# -- Compiling interface interface_counter
+# -- Compiling module counter
+# -- Compiling module counter_top
+# -- Compiling package counter_tb_sv_unit
+# -- Importing package pkg_constraint
+# -- Compiling module counter_tb
+# -- Compiling module counter_sva
+# 
+# Top level modules:
+# 	monitor_counter
+# 	counter_top
+# End time: 21:48:26 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 21:48:36 on Sep 21,2024, Elapsed time: 0:06:59
+# Errors: 3, Warnings: 1
+# vsim -voptargs="+acc" work.counter_top -coverage -sv_seed random -l sim.log 
+# Start time: 21:48:37 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.counter_top(fast)
+# Loading work.interface_counter(fast__1)
+# Loading work.counter(fast)
+# Loading work.counter_sva(fast)
+# Loading work.pkg_constraint(fast)
+# Loading work.counter_tb_sv_unit(fast)
+# Loading work.counter_tb(fast)
+# Sv_Seed = 4240634033
+# ** Note: $stop    : counter_tb.sv(26)
+#    Time: 2 ns  Iteration: 1  Instance: /counter_top/tb1
+# Break in Module counter_tb at counter_tb.sv line 26
+add wave -position insertpoint sim:/counter_top/d1/co_if/*
+add wave /counter_top/d1/counter_sva_instance/cover_load_active /counter_top/d1/counter_sva_instance/cover_load_not_active /counter_top/d1/counter_sva_instance/cover_increment_count /counter_top/d1/counter_sva_instance/cover_decrement_count
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 21:53:15 on Sep 21,2024
+# vlog -reportprogress 300 pkg_constraint.sv monitor_counter.sv interface_counter.sv counter.sv counter_top.sv counter_tb.sv counter_sva.sv "+cover" -covercells 
+# -- Compiling package pkg_constraint
+# -- Compiling module monitor_counter
+# -- Compiling interface interface_counter
+# -- Compiling module counter
+# -- Compiling module counter_top
+# -- Compiling package counter_tb_sv_unit
+# -- Importing package pkg_constraint
+# -- Compiling module counter_tb
+# -- Compiling module counter_sva
+# 
+# Top level modules:
+# 	monitor_counter
+# 	counter_top
+# End time: 21:53:15 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 21:53:24 on Sep 21,2024, Elapsed time: 0:04:47
+# Errors: 2, Warnings: 1
+# vsim -voptargs="+acc" work.counter_top -coverage -sv_seed random -l sim.log 
+# Start time: 21:53:24 on Sep 21,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.counter_top(fast)
+# Loading work.interface_counter(fast__1)
+# Loading work.counter(fast)
+# Loading work.counter_sva(fast)
+# Loading work.pkg_constraint(fast)
+# Loading work.counter_tb_sv_unit(fast)
+# Loading work.counter_tb(fast)
+# Sv_Seed = 3596806565
+# ** Note: $stop    : counter_tb.sv(26)
+#    Time: 2 ns  Iteration: 1  Instance: /counter_top/tb1
+# Break in Module counter_tb at counter_tb.sv line 26
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 22:00:17 on Sep 21,2024
+# vlog -reportprogress 300 pkg_constraint.sv monitor_counter.sv interface_counter.sv counter.sv counter_top.sv counter_tb.sv counter_sva.sv "+cover" -covercells 
+# -- Compiling package pkg_constraint
+# -- Compiling module monitor_counter
+# -- Compiling interface interface_counter
+# -- Compiling module counter
+# -- Compiling module counter_top
+# -- Compiling package counter_tb_sv_unit
+# -- Importing package pkg_constraint
+# -- Compiling module counter_tb
+# -- Compiling module counter_sva
+# 
+# Top level modules:
+# 	monitor_counter
+# 	counter_top
+# End time: 22:00:17 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# $
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 22:00:33 on Sep 21,2024, Elapsed time: 0:07:09
+# Errors: 2, Warnings: 1
+# vsim -voptargs="+acc" work.counter_top -coverage -sv_seed random -l sim.log 
+# Start time: 22:00:36 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.counter_top(fast)
+# Loading work.interface_counter(fast__1)
+# Loading work.counter(fast)
+# Loading work.counter_sva(fast)
+# Loading work.pkg_constraint(fast)
+# Loading work.counter_tb_sv_unit(fast)
+# Loading work.counter_tb(fast)
+# Sv_Seed = 3238190925
+# ** Note: $stop    : counter_tb.sv(26)
+#    Time: 2 ns  Iteration: 1  Instance: /counter_top/tb1
+# Break in Module counter_tb at counter_tb.sv line 26
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 22:01:45 on Sep 21,2024
+# vlog -reportprogress 300 pkg_constraint.sv monitor_counter.sv interface_counter.sv counter.sv counter_top.sv counter_tb.sv counter_sva.sv "+cover" -covercells 
+# -- Compiling package pkg_constraint
+# -- Compiling module monitor_counter
+# -- Compiling interface interface_counter
+# -- Compiling module counter
+# -- Compiling module counter_top
+# -- Compiling package counter_tb_sv_unit
+# -- Importing package pkg_constraint
+# -- Compiling module counter_tb
+# -- Compiling module counter_sva
+# 
+# Top level modules:
+# 	monitor_counter
+# 	counter_top
+# End time: 22:01:45 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 22:02:08 on Sep 21,2024, Elapsed time: 0:01:32
+# Errors: 2, Warnings: 1
+# vsim -voptargs="+acc" work.counter_top -coverage -sv_seed random -l sim.log 
+# Start time: 22:02:08 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.counter_top(fast)
+# Loading work.interface_counter(fast__1)
+# Loading work.counter(fast)
+# Loading work.counter_sva(fast)
+# Loading work.pkg_constraint(fast)
+# Loading work.counter_tb_sv_unit(fast)
+# Loading work.counter_tb(fast)
+# Sv_Seed = 3127058245
+# ** Note: $stop    : counter_tb.sv(27)
+#    Time: 20002 ns  Iteration: 1  Instance: /counter_top/tb1
+# Break in Module counter_tb at counter_tb.sv line 27
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 22:07:07 on Sep 21,2024, Elapsed time: 0:04:59
+# Errors: 2, Warnings: 1
+vcover report coouner_top.ucdb -details -annotate -all -output cover_rpt.txt
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 22:07:53 on Sep 21,2024
+# vcover report coouner_top.ucdb -details -annotate -all -output cover_rpt.txt 
+# ** Error: (vcover-7) Failed to open UCDB file "coouner_top.ucdb" in read mode.
+# ** Note: (vcover-17388) No matching coverage data found in file 'coouner_top.ucdb'.
+# End time: 22:07:53 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcover report couner_top.ucdb -details -annotate -all -output cover_rpt.txt
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 22:07:59 on Sep 21,2024
+# vcover report couner_top.ucdb -details -annotate -all -output cover_rpt.txt 
+# ** Error: (vcover-7) Failed to open UCDB file "couner_top.ucdb" in read mode.
+# ** Note: (vcover-17388) No matching coverage data found in file 'couner_top.ucdb'.
+# End time: 22:07:59 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcover report counter_top.ucdb -details -annotate -all -output cover_rpt.txt
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 22:08:10 on Sep 21,2024
+# vcover report counter_top.ucdb -details -annotate -all -output cover_rpt.txt 
+# End time: 22:08:10 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 22:08:51 on Sep 21,2024
+# vlog -reportprogress 300 pkg_constraint.sv monitor_counter.sv interface_counter.sv counter.sv counter_top.sv counter_tb.sv counter_sva.sv "+cover" -covercells 
+# -- Compiling package pkg_constraint
+# -- Compiling module monitor_counter
+# -- Compiling interface interface_counter
+# -- Compiling module counter
+# -- Compiling module counter_top
+# -- Compiling package counter_tb_sv_unit
+# -- Importing package pkg_constraint
+# -- Compiling module counter_tb
+# -- Compiling module counter_sva
+# 
+# Top level modules:
+# 	monitor_counter
+# 	counter_top
+# End time: 22:08:51 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.counter_top -coverage -sv_seed random -l sim.log 
+# Start time: 22:08:52 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.counter_top(fast)
+# Loading work.interface_counter(fast__1)
+# Loading work.counter(fast)
+# Loading work.counter_sva(fast)
+# Loading work.pkg_constraint(fast)
+# Loading work.counter_tb_sv_unit(fast)
+# Loading work.counter_tb(fast)
+# Sv_Seed = 3879936929
+# ** Note: $stop    : counter_tb.sv(25)
+#    Time: 20002 ns  Iteration: 1  Instance: /counter_top/tb1
+# Break in Module counter_tb at counter_tb.sv line 25
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4/Problem_4.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 22:10:06 on Sep 21,2024, Elapsed time: 0:01:14
+# Errors: 2, Warnings: 1

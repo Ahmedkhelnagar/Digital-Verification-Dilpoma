@@ -1,0 +1,20 @@
+# Compile of interface_counter.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of counter_tb.sv failed with 2 errors.
+# Compile of pkg_constraint.sv was successful.
+# Compile of counter_tb.sv failed with 1 errors.
+# Compile of counter_tb.sv failed with 1 errors.
+# Compile of counter_tb.sv failed with 5 errors.
+# Compile of counter_tb.sv was successful.
+# Compile of counter_sva.sv failed with 1 errors.
+# Compile of counter_sva.sv was successful.
+# Compile of monitor_counter.sv was successful.
+# Compile of counter_top.sv was successful.
+# Compile of counter.sv was successful.
+# Compile of counter_tb.sv was successful.
+# Compile of pkg_constraint.sv was successful.
+# Compile of counter_sva.sv was successful.
+# Compile of counter_top.sv was successful.
+# Compile of interface_counter.sv was successful.
+# Compile of monitor_counter.sv was successful.
+# 7 compiles, 0 failed with no errors.

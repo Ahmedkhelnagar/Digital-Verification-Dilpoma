@@ -1,0 +1,79 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/questasim64_2021.1/examples
+T_opt
+!s110 1725174883
+V<KM296JV4B8IZch@79jTM0
+04 8 4 work adder_tb fast 0
+=1-e454e84764da-66d41460-2bf-5588
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vadder
+!s110 1725174876
+!i10b 1
+!s100 KXleX>4`4ohUo;GDahe=23
+IVS9Fj@R9l1Y6cAUkTlQ651
+Z2 dD:/Digital Design/KW Course/Verification/VF.Session 1/Assignment_1/Problem_1
+w1724667346
+8adder.v
+Fadder.v
+!i122 14
+L0 1 17
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z5 !s108 1725174875.000000
+Z6 !s107 adder_tb.sv|adder.v|
+Z7 !s90 -reportprogress|300|adder.v|adder_tb.sv|+cover|-covercells|
+!i113 0
+Z8 !s102 +cover -covercells
+Z9 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vadder_tb
+DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1725174877
+!i10b 1
+!s100 ]a;8cL;8z<hEi[nNYRB0T0
+I320`iZ^RklClAg`R[0c^?1
+S1
+R2
+w1725173382
+8adder_tb.sv
+Fadder_tb.sv
+!i122 14
+L0 3 98
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R9
+R1

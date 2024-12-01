@@ -1,0 +1,16 @@
+# Compile of priority_enc.v failed with 1 errors.
+# Compile of priority_enc.v was successful.
+# Compile of priority_enc_tb.sv was successful.
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 22:55:36 on Sep 18,2024
+# vlog -reportprogress 300 priority_enc.v priority_enc_tb.sv "+cover" -covercells 
+# -- Compiling module priority_enc
+# -- Compiling module priority_enc_tb
+# 
+# Top level modules:
+# 	priority_enc_tb
+# End time: 22:55:36 on Sep 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

@@ -1,0 +1,92 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /\priority_enc_tb#DUT 
+=== Design Unit: work.priority_enc
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         7         7         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\priority_enc_tb#DUT 
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File priority_enc.v
+------------------------------------IF Branch------------------------------------
+    10                                        21     Count coming in to IF
+    10              1                          1       if (rst)
+    12              1                         20       else
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    13                                        20     Count coming in to CASE
+    14              1                          2       		4'b1000: Y <= 0;
+    15              1                          2       		4'bX100: Y <= 1;
+    16              1                          4       		4'bXX10: Y <= 2;
+    17              1                         10       		4'bXXX1: Y <= 3;
+                                               2     All False Count
+Branch totals: 5 hits of 5 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       7         7         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\priority_enc_tb#DUT  --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File priority_enc.v
+    1                                                module priority_enc (
+    2                                                input  clk,
+    3                                                input  rst,
+    4                                                input  [3:0] D,	
+    5                                                output reg [1:0] Y,	
+    6                                                output reg valid
+    7                                                );
+    8                                                
+    9               1                         21     always @(posedge clk) begin
+    10                                                 if (rst)
+    11              1                          1          Y <= 2'b0;
+    12                                                 else
+    13                                                 	casex (D)/**Valid = 1 **/
+    14              1                          2       		4'b1000: Y <= 0;
+    15              1                          2       		4'bX100: Y <= 1;
+    16              1                          4       		4'bXX10: Y <= 2;
+    17              1                         10       		4'bXXX1: Y <= 3;
+    18                                                 	endcase
+    19              1                         21       	valid <= (~|D)? 1'b0: 1'b1;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         18        18         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\priority_enc_tb#DUT  --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                            D[0-3]           1           1      100.00 
+                                            Y[1-0]           1           1      100.00 
+                                               clk           1           1      100.00 
+                                               rst           1           1      100.00 
+                                             valid           1           1      100.00 
+
+Total Node Count     =          9 
+Toggled Node Count   =          9 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (18 of 18 bins)
+
+
+Total Coverage By Instance (filtered view): 100.00%
+

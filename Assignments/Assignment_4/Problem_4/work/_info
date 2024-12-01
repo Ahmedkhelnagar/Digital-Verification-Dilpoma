@@ -1,0 +1,236 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Priority_encoder
+T_opt
+!s110 1726945734
+VT0MPTPWjIYV?MHBJa4TbZ0
+04 11 4 work counter_top fast 0
+=1-e454e84764da-66ef19c4-37c-1b20
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vcounter
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1726945731
+!i10b 1
+!s100 BJ6Nm`Tjoa3nU6j=TI@Kk0
+I2G7ZiT9oMR9DZ^zbeiRzg3
+S1
+Z4 dD:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_4
+w1726944478
+8counter.sv
+Fcounter.sv
+!i122 25
+L0 8 18
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z7 !s108 1726945731.000000
+Z8 !s107 counter_sva.sv|counter_tb.sv|counter_top.sv|counter.sv|interface_counter.sv|monitor_counter.sv|pkg_constraint.sv|
+Z9 !s90 -reportprogress|300|pkg_constraint.sv|monitor_counter.sv|interface_counter.sv|counter.sv|counter_top.sv|counter_tb.sv|counter_sva.sv|+cover|-covercells|
+!i113 0
+Z10 !s102 +cover -covercells
+Z11 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vcounter_sva
+R2
+R3
+!i10b 1
+!s100 l1S9M^80D3f:8a2^g3nn@0
+IZ4H]]iMeWif2U`]6:V2N`3
+S1
+R4
+w1726944045
+8counter_sva.sv
+Fcounter_sva.sv
+!i122 25
+L0 3 36
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+vcounter_tb
+R2
+Z12 DXx4 work 14 pkg_constraint 0 22 Qb9cmL`<<Pn9Hb@melBVj2
+DXx4 work 18 counter_tb_sv_unit 0 22 JFN_1Vg37FYeI=e5YL>`^3
+R3
+R5
+r1
+!s85 0
+!i10b 1
+!s100 I?JZjRIC?=Jf_[>JDlTmm1
+IUzINMY<?>ilD?LFLk@UE62
+!s105 counter_tb_sv_unit
+S1
+R4
+Z13 w1726945333
+Z14 8counter_tb.sv
+Z15 Fcounter_tb.sv
+!i122 25
+L0 5 35
+R6
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+Xcounter_tb_sv_unit
+R2
+R12
+R3
+VJFN_1Vg37FYeI=e5YL>`^3
+r1
+!s85 0
+!i10b 1
+!s100 PQBZB?7UJJa=Tg0=HaVH70
+IJFN_1Vg37FYeI=e5YL>`^3
+!i103 1
+S1
+R4
+R13
+R14
+R15
+!i122 25
+Z16 L0 3 0
+R6
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+vcounter_top
+R2
+R3
+!i10b 1
+!s100 EeoiHJ93a9UV3k0CF_;0Q2
+IUWn?ljGBOY5lh^mhAm1C`1
+S1
+R4
+w1726945211
+8counter_top.sv
+Fcounter_top.sv
+!i122 25
+L0 3 16
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+Yinterface_counter
+R2
+R3
+!i10b 1
+!s100 gM`bF9TzQQdUCbi^:;>Q:2
+IBdUHNoH7HI[`5]_Xoi:Em2
+S1
+R4
+w1726779571
+8interface_counter.sv
+Finterface_counter.sv
+!i122 25
+R16
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+vmonitor_counter
+R2
+R3
+!i10b 1
+!s100 `>?SPDGaM[e@;FQW<XSGJ2
+I0nH6mUek@zzZ4W>Em:C<F2
+S1
+R4
+w1726780127
+8monitor_counter.sv
+Fmonitor_counter.sv
+!i122 25
+L0 3 6
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1
+Xpkg_constraint
+R2
+R3
+!i10b 1
+!s100 U_8D6EPMEJm]D5j@2@PVL2
+IQb9cmL`<<Pn9Hb@melBVj2
+S1
+R4
+w1726942049
+8pkg_constraint.sv
+Fpkg_constraint.sv
+!i122 25
+R16
+VQb9cmL`<<Pn9Hb@melBVj2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R11
+R1

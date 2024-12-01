@@ -1,0 +1,213 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Digital Design/KW Course/Verification/VF.Session 2/Assignment_2/Problem_2
+T_opt
+!s110 1725957293
+VzDS<20E=:7^PlGHiXG1U;2
+04 7 4 work ALSU_tb fast 0
+=1-e454e84764da-66e004a8-29b-3d28
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vALSU
+Z2 !s110 1725957285
+!i10b 1
+!s100 TM8@RYd;=SnNm<MjJ_1dT1
+IkzQ=3^3U5?VYF>_LLTP[B0
+Z3 dD:/Digital Design/KW Course/Verification/VF.Session 2/Assignment_2/Problem_3
+w1725794039
+8ALSU.v
+FALSU.v
+!i122 113
+L0 1 122
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z6 !s108 1725957284.000000
+Z7 !s107 ALSU_tb.sv|ALSU.v|package.sv|
+Z8 !s90 -reportprogress|300|package.sv|ALSU.v|ALSU_tb.sv|+cover|-covercells|
+!i113 0
+Z9 !s102 +cover -covercells
+Z10 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@a@l@s@u
+Xalsu_pkg
+Z11 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R2
+!i10b 1
+!s100 Q_FUcPGgKCSn5zoXD7hMO3
+I9585^zL8N<X02=>C:LUL[0
+S1
+R3
+w1725745627
+8package.sv
+Fpackage.sv
+!i122 113
+Z12 L0 3 0
+V9585^zL8N<X02=>C:LUL[0
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R1
+vALSU_tb
+R11
+Z13 DXx4 work 8 alsu_pkg 0 22 9585^zL8N<X02=>C:LUL[0
+DXx4 work 15 ALSU_tb_sv_unit 0 22 1o^OfH>N[23e2?3hCo<D62
+R2
+R4
+r1
+!s85 0
+!i10b 1
+!s100 G9ZZgI<f^UR:>PmWo55az2
+IG<O1Lfb5H<AT>eNQBmDI]3
+!s105 ALSU_tb_sv_unit
+S1
+R3
+Z14 w1725957149
+Z15 8ALSU_tb.sv
+Z16 FALSU_tb.sv
+!i122 113
+L0 5 191
+R5
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R1
+n@a@l@s@u_tb
+XALSU_tb_sv_unit
+R11
+R13
+R2
+V1o^OfH>N[23e2?3hCo<D62
+r1
+!s85 0
+!i10b 1
+!s100 VRUXnWb15YV0QgfUi^91T0
+I1o^OfH>N[23e2?3hCo<D62
+!i103 1
+S1
+R3
+R14
+R15
+R16
+!i122 113
+R12
+R5
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R1
+n@a@l@s@u_tb_sv_unit

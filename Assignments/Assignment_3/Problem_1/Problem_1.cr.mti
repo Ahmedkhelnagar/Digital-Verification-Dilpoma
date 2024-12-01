@@ -1,0 +1,8 @@
+{D:/Digital Design/KW Course/Verification/VF.Session 3/Assignment_3/Problem_1/counter.v} {1 {vlog -work work -vopt -stats=none {D:/Digital Design/KW Course/Verification/VF.Session 3/Assignment_3/Problem_1/counter.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}}

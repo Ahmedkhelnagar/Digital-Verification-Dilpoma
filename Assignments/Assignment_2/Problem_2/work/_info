@@ -1,0 +1,138 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Digital Design/KW Course/Verification/VF.Session 2/Assignment_2/Problem_1
+T_opt
+!s110 1725720092
+V8@=^cUzQhHj3?HDDh39^82
+04 10 4 work counter_tb fast 0
+=1-e454e84764da-66dc6619-3e6-33e8
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vcounter
+Z2 !s110 1725720075
+!i10b 1
+!s100 ;fh5WT@`3b6<QB3a4eFW`2
+IWTH^XV_2bSTeoD]6<eES>3
+Z3 dD:/Digital Design/KW Course/Verification/VF.Session 2/Assignment_2/Problem_2
+w1725558934
+8counter.v
+Fcounter.v
+!i122 25
+L0 8 28
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z6 !s108 1725720074.000000
+Z7 !s107 counter_tb.sv|counter.v|
+Z8 !s90 -reportprogress|300|counter.v|counter_tb.sv|+cover|-covercells|
+!i113 0
+Z9 !s102 +cover -covercells
+Z10 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vcounter_tb
+Z11 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z12 DXx4 work 14 pkg_constraint 0 22 lMK`L4l4XR1SNWBi2mLkT0
+DXx4 work 18 counter_tb_sv_unit 0 22 bE7X56lfVS;F@8i[IZ58z2
+R2
+R4
+r1
+!s85 0
+!i10b 1
+!s100 cLO_ZBL4@>N3]:h0_>GNf0
+ImG^4VH>zL;zmnA<KIW?@A2
+!s105 counter_tb_sv_unit
+S1
+R3
+Z13 w1725720070
+Z14 8counter_tb.sv
+Z15 Fcounter_tb.sv
+!i122 25
+L0 5 119
+R5
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R1
+Xcounter_tb_sv_unit
+R11
+R12
+R2
+VbE7X56lfVS;F@8i[IZ58z2
+r1
+!s85 0
+!i10b 1
+!s100 ne_eb=YR_e^LbCc<eGabL2
+IbE7X56lfVS;F@8i[IZ58z2
+!i103 1
+S1
+R3
+R13
+R14
+R15
+!i122 25
+Z16 L0 3 0
+R5
+31
+R6
+R7
+R8
+!i113 0
+R9
+R10
+R1
+Xpkg_constraint
+R11
+!s110 1725712111
+!i10b 1
+!s100 U_8D6EPMEJm]D5j@2@PVL2
+IlMK`L4l4XR1SNWBi2mLkT0
+S1
+R3
+w1725712009
+8D:/Digital Design/KW Course/Verification/VF.Session 2/Assignment_2/Problem_2/pkg_constraint.sv
+FD:/Digital Design/KW Course/Verification/VF.Session 2/Assignment_2/Problem_2/pkg_constraint.sv
+!i122 8
+R16
+VlMK`L4l4XR1SNWBi2mLkT0
+R5
+r1
+!s85 0
+31
+!s108 1725712111.000000
+!s107 D:/Digital Design/KW Course/Verification/VF.Session 2/Assignment_2/Problem_2/pkg_constraint.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|D:/Digital Design/KW Course/Verification/VF.Session 2/Assignment_2/Problem_2/pkg_constraint.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1

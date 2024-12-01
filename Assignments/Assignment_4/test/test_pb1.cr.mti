@@ -1,0 +1,18 @@
+{D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/test/ALSU_tb.sv} {2 {vlog -work work -vopt -sv -stats=none {D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/test/ALSU_tb.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+** Warning: D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/test/ALSU_tb.sv(3): (vlog-13233) Design unit "ALSU_tb_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
+-- Compiling package ALSU_tb_sv_unit
+-- Importing package alsu_pkg
+-- Compiling module ALSU_tb
+
+Top level modules:
+	ALSU_tb
+
+} {} {}} {D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/test/ALSU.v} {1 {vlog -work work -vopt -stats=none {D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/test/ALSU.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module ALSU
+
+Top level modules:
+	ALSU
+
+} {} {}}

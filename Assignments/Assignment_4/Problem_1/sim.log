@@ -1,0 +1,90 @@
+# vsim -voptargs="+acc" work.ALSU_tb -coverage -sv_seed random -l sim.log 
+# Start time: 11:59:41 on Sep 22,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.alsu_pkg(fast)
+# Loading work.ALSU_tb_sv_unit(fast)
+# Loading work.ALSU_tb(fast)
+# Loading work.ALSU(fast)
+# Sv_Seed = 3415980841
+# Error in the output!!,out = 1,expected_out = 31,leds = 0,exp_leds = 0
+# ** Note: $stop    : ALSU_tb.sv(142)
+#    Time: 68 ns  Iteration: 1  Instance: /ALSU_tb
+# Break in Task check_result at ALSU_tb.sv line 142
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_1/Problem_1.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_1/Problem_1.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 12:01:37 on Sep 22,2024, Elapsed time: 0:01:56
+# Errors: 2, Warnings: 2
+vcover report ALSU_tb.ucdb -details -annotate -all -output cover_rpt.txt
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 12:02:34 on Sep 22,2024
+# vcover report ALSU_tb.ucdb -details -annotate -all -output cover_rpt.txt 
+# End time: 12:02:35 on Sep 22,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 12:06:40 on Sep 22,2024
+# vlog -reportprogress 300 package.sv ALSU.v ALSU_tb.sv "+cover" -covercells 
+# -- Compiling package alsu_pkg
+# ** Warning: package.sv(130): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(139): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(152): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(164): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(176): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(187): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(197): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# ** Warning: package.sv(203): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+# -- Compiling module ALSU
+# -- Compiling package ALSU_tb_sv_unit
+# -- Importing package alsu_pkg
+# -- Compiling module ALSU_tb
+# 
+# Top level modules:
+# 	ALSU_tb
+# End time: 12:06:40 on Sep 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# vsim -voptargs="+acc" work.ALSU_tb -coverage -sv_seed random -l sim.log 
+# Start time: 12:06:41 on Sep 22,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.alsu_pkg(fast)
+# Loading work.ALSU_tb_sv_unit(fast)
+# Loading work.ALSU_tb(fast)
+# Loading work.ALSU(fast)
+# Sv_Seed = 2193346957
+# ** Error: (vsim-8565) Illegal state bin was hit at value=INVALID_7. The bin counter for the illegal bin '\/alsu_pkg::alsu_class::cvr_gp .ALU_cp.Bins_invalid' is 1.
+#    Time: 50 ns  Iteration: 1  Instance: /ALSU_tb
+# ** Error: (vsim-8565) Illegal state bin was hit at value=INVALID_7. The bin counter for the illegal bin '\/alsu_pkg::alsu_class::cvr_gp .ALU_cp.Bins_invalid' is 2.
+#    Time: 182 ns  Iteration: 1  Instance: /ALSU_tb
+# ** Error: (vsim-8565) Illegal state bin was hit at value=INVALID_7. The bin counter for the illegal bin '\/alsu_pkg::alsu_class::cvr_gp .ALU_cp.Bins_invalid' is 3.
+#    Time: 282 ns  Iteration: 1  Instance: /ALSU_tb
+# ** Error: (vsim-8565) Illegal state bin was hit at value=INVALID_7. The bin counter for the illegal bin '\/alsu_pkg::alsu_class::cvr_gp .ALU_cp.Bins_invalid' is 4.
+#    Time: 446 ns  Iteration: 1  Instance: /ALSU_tb
+# ** Error: (vsim-8565) Illegal state bin was hit at value=INVALID_7. The bin counter for the illegal bin '\/alsu_pkg::alsu_class::cvr_gp .ALU_cp.Bins_invalid' is 5.
+#    Time: 482 ns  Iteration: 1  Instance: /ALSU_tb
+# ** Error: (vsim-8565) Illegal state bin was hit at value=INVALID_6. The bin counter for the illegal bin '\/alsu_pkg::alsu_class::cvr_gp .ALU_cp.Bins_invalid' is 6.
+#    Time: 574 ns  Iteration: 1  Instance: /ALSU_tb
+# ** Error: (vsim-8565) Illegal state bin was hit at value=INVALID_7. The bin counter for the illegal bin '\/alsu_pkg::alsu_class::cvr_gp .ALU_cp.Bins_invalid' is 7.
+#    Time: 606 ns  Iteration: 1  Instance: /ALSU_tb
+# Error in the output!!,out = -32,expected_out = -8,leds = 0,exp_leds = 0
+# ** Note: $stop    : ALSU_tb.sv(142)
+#    Time: 818 ns  Iteration: 1  Instance: /ALSU_tb
+# Break in Task check_result at ALSU_tb.sv line 142
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_1/Problem_1.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_1/Problem_1.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 12:09:00 on Sep 22,2024, Elapsed time: 0:02:19
+# Errors: 9, Warnings: 1

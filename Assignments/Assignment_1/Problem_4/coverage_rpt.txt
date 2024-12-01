@@ -1,0 +1,111 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /\DSP_tb#DUT 
+=== Design Unit: work.DSP
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         2         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /\DSP_tb#DUT 
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File DSP.v
+------------------------------------IF Branch------------------------------------
+    12                                     40011     Count coming in to IF
+    12              1                          2     	if (!rst_n) begin
+    23              1                      40009     	else begin
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      17        17         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /\DSP_tb#DUT  --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File DSP.v
+    1                                                module DSP(A, B, C, D, clk, rst_n, P);
+    2                                                parameter OPERATION = "ADD";
+    3                                                input  [17:0] A, B, D;
+    4                                                input  [47:0] C;
+    5                                                input clk, rst_n;
+    6                                                output reg  [47:0] P;
+    7                                                
+    8                                                reg  [17:0] A_reg_stg1, A_reg_stg2, B_reg, D_reg, adder_out_reg;
+    9                                                reg  [47:0] C_reg, mult_out;
+    10                                               
+    11              1                      40011     always @(posedge clk or negedge rst_n) begin
+    12                                               	if (!rst_n) begin
+    13                                               		// reset
+    14              1                          2     		 A_reg_stg1 <= 0;
+    15              1                          2     		 A_reg_stg2 <= 0;
+    16              1                          2     		 B_reg <= 0;
+    17              1                          2     		 C_reg <= 0;
+    18              1                          2     		 D_reg <= 0;
+    19              1                          2     		 adder_out_reg <= 0; 
+    20              1                          2     		 mult_out <= 0;
+    21              1                          2     		 P <= 0;
+    22                                               	end
+    23                                               	else begin
+    24              1                      40009     		A_reg_stg1 <= A;
+    25              1                      40009     		A_reg_stg2 <= A_reg_stg1;
+    26              1                      40009     		B_reg <= B;
+    27              1                      40009     		C_reg <= C;
+    28              1                      40009     		D_reg <= D; 
+    29                                               		if (OPERATION == "ADD") begin
+    30              1                      40009     			adder_out_reg <= D_reg + B_reg;
+    31              1                      40009     			P <= mult_out + C_reg;
+    32                                               		end
+    33                                               		else if (OPERATION == "SUBTRACT") begin
+    34                                               			adder_out_reg <= D_reg - B_reg;
+    35                                               			P <= mult_out - C_reg;
+    36                                               		end
+    37              1                      40009     		mult_out <= A_reg_stg2 * adder_out_reg;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        676       652        24    96.44%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /\DSP_tb#DUT  --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                           A[0-17]           1           1      100.00 
+                                  A_reg_stg1[17-0]           1           1      100.00 
+                                  A_reg_stg2[17-0]           1           1      100.00 
+                                           B[0-17]           1           1      100.00 
+                                       B_reg[17-0]           1           1      100.00 
+                                           C[0-47]           1           1      100.00 
+                                       C_reg[47-0]           1           1      100.00 
+                                           D[0-17]           1           1      100.00 
+                                       D_reg[17-0]           1           1      100.00 
+                                           P[47-0]           1           1      100.00 
+                               adder_out_reg[17-0]           1           1      100.00 
+                                               clk           1           1      100.00 
+                                   mult_out[47-36]           0           0        0.00 
+                                    mult_out[35-0]           1           1      100.00 
+                                             rst_n           1           1      100.00 
+
+Total Node Count     =        338 
+Toggled Node Count   =        326 
+Untoggled Node Count =         12 
+
+Toggle Coverage      =      96.44% (652 of 676 bins)
+
+
+Total Coverage By Instance (filtered view): 98.81%
+

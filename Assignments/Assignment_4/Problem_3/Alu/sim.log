@@ -1,0 +1,506 @@
+# vsim -voptargs="+acc" work.ALU_4_bit_tb -coverage -sv_seed random -l sim.log 
+# Start time: 18:42:30 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.ALU_4_bit_tb(fast)
+# Loading work.ALU_4_bit(fast)
+# Sv_Seed = 4043138665
+# error_count = 0,correct_count = 23
+# ** Note: $stop    : ALU_4_bit_tb.sv(164)
+#    Time: 48 ns  Iteration: 1  Instance: /ALU_4_bit_tb
+# Break in Module ALU_4_bit_tb at ALU_4_bit_tb.sv line 164
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:44:03 on Sep 21,2024
+# vlog -reportprogress 300 ALU_4_bit.v ALU_4_bit_tb.sv "+cover" -covercells 
+# -- Compiling module ALU_4_bit
+# -- Compiling module ALU_4_bit_tb
+# 
+# Top level modules:
+# 	ALU_4_bit_tb
+# End time: 18:44:03 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 18:44:09 on Sep 21,2024, Elapsed time: 0:01:39
+# Errors: 2, Warnings: 1
+# vsim -voptargs="+acc" work.ALU_4_bit_tb -coverage -sv_seed random -l sim.log 
+# Start time: 18:44:09 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.ALU_4_bit_tb(fast)
+# Loading work.ALU_4_bit(fast)
+# Sv_Seed = 3611131181
+# error_count = 0,correct_count = 24
+# ** Note: $stop    : ALU_4_bit_tb.sv(164)
+#    Time: 50 ns  Iteration: 1  Instance: /ALU_4_bit_tb
+# Break in Module ALU_4_bit_tb at ALU_4_bit_tb.sv line 164
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:54:06 on Sep 21,2024
+# vlog -reportprogress 300 ALU_4_bit.v ALU_4_bit_tb.sv "+cover" -covercells 
+# -- Compiling module ALU_4_bit
+# -- Compiling module ALU_4_bit_tb
+# 
+# Top level modules:
+# 	ALU_4_bit_tb
+# End time: 18:54:06 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 18:54:24 on Sep 21,2024, Elapsed time: 0:10:15
+# Errors: 2, Warnings: 1
+# vsim -voptargs="+acc" work.ALU_4_bit_tb -coverage -sv_seed random -l sim.log 
+# Start time: 18:54:25 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.ALU_4_bit_tb(fast)
+# Loading work.ALU_4_bit(fast)
+# Sv_Seed = 3806185373
+# ** Error: Assertion error.
+#    Time: 7 ns Started: 7 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 9 ns Started: 9 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 15 ns Started: 15 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 17 ns Started: 17 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 19 ns Started: 19 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 21 ns Started: 21 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 27 ns Started: 27 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 29 ns Started: 29 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 31 ns Started: 31 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 33 ns Started: 33 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 39 ns Started: 39 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 41 ns Started: 41 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 59
+# ** Error: Assertion error.
+#    Time: 45 ns Started: 45 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 49 ns Started: 49 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# error_count = 0,correct_count = 24
+# ** Note: $stop    : ALU_4_bit_tb.sv(157)
+#    Time: 50 ns  Iteration: 1  Instance: /ALU_4_bit_tb
+# Break in Module ALU_4_bit_tb at ALU_4_bit_tb.sv line 157
+add wave /ALU_4_bit_tb/assert__p_rst /ALU_4_bit_tb/assert__p_ADD /ALU_4_bit_tb/assert__p_SUB /ALU_4_bit_tb/assert__p_NOT_A /ALU_4_bit_tb/assert__p_RED_B
+run -all
+run -all
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 18:59:55 on Sep 21,2024
+# vlog -reportprogress 300 ALU_4_bit.v ALU_4_bit_tb.sv "+cover" -covercells 
+# -- Compiling module ALU_4_bit
+# -- Compiling module ALU_4_bit_tb
+# 
+# Top level modules:
+# 	ALU_4_bit_tb
+# End time: 18:59:56 on Sep 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 18:59:59 on Sep 21,2024, Elapsed time: 0:05:34
+# Errors: 16, Warnings: 1
+# vsim -voptargs="+acc" work.ALU_4_bit_tb -coverage -sv_seed random -l sim.log 
+# Start time: 18:59:59 on Sep 21,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.ALU_4_bit_tb(fast)
+# Loading work.ALU_4_bit(fast)
+# Sv_Seed = 3724394353
+# ** Error: Assertion error.
+#    Time: 7 ns Started: 7 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 9 ns Started: 9 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 15 ns Started: 15 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 17 ns Started: 17 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 19 ns Started: 19 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 21 ns Started: 21 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 27 ns Started: 27 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 29 ns Started: 29 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 31 ns Started: 31 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 33 ns Started: 33 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 39 ns Started: 39 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 41 ns Started: 41 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 59
+# ** Error: Assertion error.
+#    Time: 45 ns Started: 45 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 49 ns Started: 49 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# error_count = 0,correct_count = 24
+# ** Note: $stop    : ALU_4_bit_tb.sv(157)
+#    Time: 50 ns  Iteration: 1  Instance: /ALU_4_bit_tb
+# Break in Module ALU_4_bit_tb at ALU_4_bit_tb.sv line 157
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:02:42 on Sep 21,2024
+# vlog -reportprogress 300 ALU_4_bit.v ALU_4_bit_tb.sv "+cover" -covercells 
+# -- Compiling module ALU_4_bit
+# -- Compiling module ALU_4_bit_tb
+# 
+# Top level modules:
+# 	ALU_4_bit_tb
+# End time: 19:02:42 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:02:46 on Sep 21,2024, Elapsed time: 0:02:47
+# Errors: 16, Warnings: 1
+# vsim -voptargs="+acc" work.ALU_4_bit_tb -coverage -sv_seed random -l sim.log 
+# Start time: 19:02:46 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.ALU_4_bit_tb(fast)
+# Loading work.ALU_4_bit(fast)
+# Sv_Seed = 2715654117
+# ** Error: Assertion error.
+#    Time: 7 ns Started: 7 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 9 ns Started: 9 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 15 ns Started: 15 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 17 ns Started: 17 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 19 ns Started: 19 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 21 ns Started: 21 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 27 ns Started: 27 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 29 ns Started: 29 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 31 ns Started: 31 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 33 ns Started: 33 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 39 ns Started: 39 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 41 ns Started: 41 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 59
+# ** Error: Assertion error.
+#    Time: 45 ns Started: 45 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 49 ns Started: 49 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# error_count = 0,correct_count = 24
+# ** Note: $stop    : ALU_4_bit_tb.sv(157)
+#    Time: 50 ns  Iteration: 1  Instance: /ALU_4_bit_tb
+# Break in Module ALU_4_bit_tb at ALU_4_bit_tb.sv line 157
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:03:28 on Sep 21,2024
+# vlog -reportprogress 300 ALU_4_bit.v ALU_4_bit_tb.sv "+cover" -covercells 
+# -- Compiling module ALU_4_bit
+# -- Compiling module ALU_4_bit_tb
+# 
+# Top level modules:
+# 	ALU_4_bit_tb
+# End time: 19:03:28 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:03:33 on Sep 21,2024, Elapsed time: 0:00:47
+# Errors: 16, Warnings: 1
+# vsim -voptargs="+acc" work.ALU_4_bit_tb -coverage -sv_seed random -l sim.log 
+# Start time: 19:03:33 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.ALU_4_bit_tb(fast)
+# Loading work.ALU_4_bit(fast)
+# Sv_Seed = 3799876117
+# ** Error: Assertion error.
+#    Time: 7 ns Started: 7 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 9 ns Started: 9 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 15 ns Started: 15 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 17 ns Started: 17 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 19 ns Started: 19 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 21 ns Started: 21 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 27 ns Started: 27 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 29 ns Started: 29 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 31 ns Started: 31 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 33 ns Started: 33 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 39 ns Started: 39 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 41 ns Started: 41 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 59
+# ** Error: Assertion error.
+#    Time: 45 ns Started: 45 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 49 ns Started: 49 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# error_count = 0,correct_count = 24
+# ** Note: $stop    : ALU_4_bit_tb.sv(157)
+#    Time: 50 ns  Iteration: 1  Instance: /ALU_4_bit_tb
+# Break in Module ALU_4_bit_tb at ALU_4_bit_tb.sv line 157
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:04:56 on Sep 21,2024
+# vlog -reportprogress 300 ALU_4_bit.v ALU_4_bit_tb.sv "+cover" -covercells 
+# -- Compiling module ALU_4_bit
+# -- Compiling module ALU_4_bit_tb
+# 
+# Top level modules:
+# 	ALU_4_bit_tb
+# End time: 19:04:56 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# $
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:05:00 on Sep 21,2024, Elapsed time: 0:01:27
+# Errors: 16, Warnings: 1
+# vsim -voptargs="+acc" work.ALU_4_bit_tb -coverage -sv_seed random -l sim.log 
+# Start time: 19:05:00 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.ALU_4_bit_tb(fast)
+# Loading work.ALU_4_bit(fast)
+# Sv_Seed = 3145591061
+# ** Error: Assertion error.
+#    Time: 7 ns Started: 7 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 9 ns Started: 9 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 15 ns Started: 15 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 17 ns Started: 17 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 19 ns Started: 19 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 21 ns Started: 21 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 27 ns Started: 27 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 29 ns Started: 29 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 31 ns Started: 31 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 33 ns Started: 33 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 39 ns Started: 39 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 41 ns Started: 41 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 59
+# ** Error: Assertion error.
+#    Time: 45 ns Started: 45 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 49 ns Started: 49 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# error_count = 0,correct_count = 24
+# ** Note: $stop    : ALU_4_bit_tb.sv(157)
+#    Time: 2050 ns  Iteration: 1  Instance: /ALU_4_bit_tb
+# Break in Module ALU_4_bit_tb at ALU_4_bit_tb.sv line 157
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:05:55 on Sep 21,2024
+# vlog -reportprogress 300 ALU_4_bit.v ALU_4_bit_tb.sv "+cover" -covercells 
+# -- Compiling module ALU_4_bit
+# -- Compiling module ALU_4_bit_tb
+# 
+# Top level modules:
+# 	ALU_4_bit_tb
+# End time: 19:05:55 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:06:00 on Sep 21,2024, Elapsed time: 0:01:00
+# Errors: 16, Warnings: 1
+# vsim -voptargs="+acc" work.ALU_4_bit_tb -coverage -sv_seed random -l sim.log 
+# Start time: 19:06:00 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.ALU_4_bit_tb(fast)
+# Loading work.ALU_4_bit(fast)
+# Sv_Seed = 4143841037
+# ** Error: Assertion error.
+#    Time: 7 ns Started: 7 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 9 ns Started: 9 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 15 ns Started: 15 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 17 ns Started: 17 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 19 ns Started: 19 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 21 ns Started: 21 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 27 ns Started: 27 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 29 ns Started: 29 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 31 ns Started: 31 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 33 ns Started: 33 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# ** Error: Assertion error.
+#    Time: 39 ns Started: 39 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 58
+# ** Error: Assertion error.
+#    Time: 41 ns Started: 41 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 59
+# ** Error: Assertion error.
+#    Time: 45 ns Started: 45 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 60
+# ** Error: Assertion error.
+#    Time: 49 ns Started: 49 ns  Scope: ALU_4_bit_tb File: ALU_4_bit_tb.sv Line: 57
+# error_count = 0,correct_count = 24
+# ** Note: $stop    : ALU_4_bit_tb.sv(157)
+#    Time: 2050 ns  Iteration: 1  Instance: /ALU_4_bit_tb
+# Break in Module ALU_4_bit_tb at ALU_4_bit_tb.sv line 157
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:07:53 on Sep 21,2024
+# vlog -reportprogress 300 ALU_4_bit.v ALU_4_bit_tb.sv "+cover" -covercells 
+# -- Compiling module ALU_4_bit
+# -- Compiling module ALU_4_bit_tb
+# 
+# Top level modules:
+# 	ALU_4_bit_tb
+# End time: 19:07:53 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:07:58 on Sep 21,2024, Elapsed time: 0:01:58
+# Errors: 16, Warnings: 1
+# vsim -voptargs="+acc" work.ALU_4_bit_tb -coverage -sv_seed random -l sim.log 
+# Start time: 19:07:58 on Sep 21,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.ALU_4_bit_tb(fast)
+# Loading work.ALU_4_bit(fast)
+# Sv_Seed = 2617103529
+# error_count = 0,correct_count = 24
+# ** Note: $stop    : ALU_4_bit_tb.sv(157)
+#    Time: 2050 ns  Iteration: 1  Instance: /ALU_4_bit_tb
+# Break in Module ALU_4_bit_tb at ALU_4_bit_tb.sv line 157
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:38:53 on Sep 21,2024, Elapsed time: 0:30:55
+# Errors: 2, Warnings: 1
+vcover report ALU_4_bit_tb.ucdb -details -annotate -all -output cover_rpt.txt
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 19:40:58 on Sep 21,2024
+# vcover report ALU_4_bit_tb.ucdb -details -annotate -all -output cover_rpt.txt 
+# End time: 19:40:58 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:41:38 on Sep 21,2024
+# vlog -reportprogress 300 ALU_4_bit.v ALU_4_bit_tb.sv "+cover" -covercells 
+# -- Compiling module ALU_4_bit
+# -- Compiling module ALU_4_bit_tb
+# 
+# Top level modules:
+# 	ALU_4_bit_tb
+# End time: 19:41:39 on Sep 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.ALU_4_bit_tb -coverage -sv_seed random -l sim.log 
+# Start time: 19:41:42 on Sep 21,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.ALU_4_bit_tb(fast)
+# Loading work.ALU_4_bit(fast)
+# Sv_Seed = 4261336729
+# error_count = 0,correct_count = 24
+# ** Note: $stop    : ALU_4_bit_tb.sv(157)
+#    Time: 2050 ns  Iteration: 1  Instance: /ALU_4_bit_tb
+# Break in Module ALU_4_bit_tb at ALU_4_bit_tb.sv line 157
+coverage exclude -src ALU_4_bit.v -line 26 -code b
+coverage exclude -src ALU_4_bit.v -line 26 -code s
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (D:/Digital Design/KW Course/Verification/VF.Session 4/Assignment_4/Problem_3/Alu/Problem3_Alu.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 19:49:21 on Sep 21,2024, Elapsed time: 0:07:39
+# Errors: 2, Warnings: 1
+vcover report ALU_4_bit_tb.ucdb -details -annotate -all -output cover_rpt.txt
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 19:49:42 on Sep 21,2024
+# vcover report ALU_4_bit_tb.ucdb -details -annotate -all -output cover_rpt.txt 
+# End time: 19:49:42 on Sep 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# reading C:/questasim64_2021.1/win64/../modelsim.ini
+# Loading project Problem_4

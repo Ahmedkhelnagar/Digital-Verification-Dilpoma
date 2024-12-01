@@ -1,0 +1,1005 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /priority_enc_tb/DUT
+=== Design Unit: work.priority_enc
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         7         7         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /priority_enc_tb/DUT
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File priority_enc.v
+------------------------------------IF Branch------------------------------------
+    10                                       100     Count coming in to IF
+    10              1                          2       if (rst)begin
+    14              1                         98       else
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    15                                        98     Count coming in to CASE
+    16              1                          6       		4'b1000: Y <= 0;
+    17              1                          8       		4'bX100: Y <= 1;
+    18              1                         27       		4'bXX10: Y <= 2;
+    19              1                         54       		4'bXXX1: Y <= 3;
+                                               3     All False Count
+Branch totals: 5 hits of 5 branches = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       7         7         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /priority_enc_tb/DUT --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File priority_enc.v
+    1                                                module priority_enc (
+    2                                                input  clk,
+    3                                                input  rst,
+    4                                                input  [3:0] D,	
+    5                                                output reg [1:0] Y,	
+    6                                                output reg valid
+    7                                                );
+    8                                                
+    9               1                        100     always @(posedge clk) begin
+    10                                                 if (rst)begin
+    11              1                          2          Y <= 2'b0;
+    12                                               	//  valid <= 1'b0;
+    13                                                 end
+    14                                                 else
+    15                                                 	casex (D)/**Valid = 1 **/
+    16              1                          6       		4'b1000: Y <= 0;
+    17              1                          8       		4'bX100: Y <= 1;
+    18              1                         27       		4'bXX10: Y <= 2;
+    19              1                         54       		4'bXXX1: Y <= 3;
+    20                                                 	endcase
+    21              1                        100       	valid <= (~|D)? 1'b0: 1'b1;
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         18        18         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /priority_enc_tb/DUT --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                            D[0-3]           1           1      100.00 
+                                            Y[1-0]           1           1      100.00 
+                                               clk           1           1      100.00 
+                                               rst           1           1      100.00 
+                                             valid           1           1      100.00 
+
+Total Node Count     =          9 
+Toggled Node Count   =          9 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (18 of 18 bins)
+
+=================================================================================
+=== Instance: /priority_enc_tb
+=== Design Unit: work.priority_enc_tb
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       6         6         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/priority_enc_tb/p6_pro
+                     priority_enc_tb.sv(52)             0          1
+/priority_enc_tb/p1_pro
+                     priority_enc_tb.sv(53)             0          1
+/priority_enc_tb/p2_pro
+                     priority_enc_tb.sv(54)             0          1
+/priority_enc_tb/p3_pro
+                     priority_enc_tb.sv(55)             0          1
+/priority_enc_tb/p4_pro
+                     priority_enc_tb.sv(56)             0          1
+/priority_enc_tb/p5_pro
+                     priority_enc_tb.sv(57)             0          1
+
+Directive Coverage:
+    Directives                       6         6         0   100.00%
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/priority_enc_tb/p6_cov                  priority_enc_tb Verilog  SVA  priority_enc_tb.sv(59)
+                                                                                 1 Covered   
+/priority_enc_tb/p1_cov                  priority_enc_tb Verilog  SVA  priority_enc_tb.sv(60)
+                                                                                20 Covered   
+/priority_enc_tb/p2_cov                  priority_enc_tb Verilog  SVA  priority_enc_tb.sv(61)
+                                                                                 5 Covered   
+/priority_enc_tb/p3_cov                  priority_enc_tb Verilog  SVA  priority_enc_tb.sv(62)
+                                                                                 8 Covered   
+/priority_enc_tb/p4_cov                  priority_enc_tb Verilog  SVA  priority_enc_tb.sv(63)
+                                                                                27 Covered   
+/priority_enc_tb/p5_cov                  priority_enc_tb Verilog  SVA  priority_enc_tb.sv(64)
+                                                                                56 Covered   
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      14        14         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /priority_enc_tb --
+NOTE: The modification timestamp for source file 'priority_enc_tb.sv' has been altered since compilation.
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File priority_enc_tb.sv
+    3                                                module priority_enc_tb;
+    4                                                    //Signal declaration
+    5                                                    logic clk;
+    6                                                    logic rst;
+    7                                                    logic [3:0]D;
+    8                                                    logic [1:0]Y;   //output
+    9                                                    logic valid;    //output
+    10                                               
+    11                                                   integer error_count = 0;
+    12                                                   integer correct_count = 0;
+    13                                               
+    14                                                   integer i;
+    15                                               
+    16                                                   //module instantiation
+    17                                                   priority_enc DUT(.*);
+    18                                               
+    19                                                   //clock generation
+    20                                                   initial begin
+    21              1                          1             clk = 0;
+    22              1                          1             forever 
+    23              1                        205                #1 clk = ~clk;
+    23              2                        204     
+    24                                                   end
+    25                                               
+    26                                               
+    27                                                       property p1;
+    28                                                           @(posedge clk) disable iff (rst)  $onehot(D)|=>valid;
+    29                                                       endproperty
+    30                                               
+    31                                                       property p2;
+    32                                                           @(posedge clk) disable iff (rst)  (D[3:0] == 4'b1000)|=>(Y ==2'b00);
+    33                                                       endproperty
+    34                                               
+    35                                                       property p3;
+    36                                                           @(posedge clk) disable iff (rst)  (D[2:0] == 3'b100)|=>(Y ==2'b01);
+    37                                                       endproperty
+    38                                               
+    39                                                       property p4;
+    40                                                           @(posedge clk) disable iff (rst)  (D[1:0] == 2'b10)|=>(Y ==2'b10);
+    41                                                       endproperty
+    42                                               
+    43                                                       property p5;
+    44                                                           @(posedge clk)  disable iff (rst) (D[0] == 1'b1)|=>(Y ==2'b11);
+    45                                                       endproperty
+    46                                               
+    47                                                       property p6;
+    48                                                           @(posedge clk) (rst) |=> ((Y == 2'b00) && (valid == 1'b0));
+    49                                                       endproperty
+    50                                               
+    51                                                       p6_pro:assert property(p6) else $display("p6 is failing,D = %0d,Y = %0d,valid = %0d",D,Y,valid);
+    52                                                       p1_pro:assert property(p1) else $display("p1 is failing,D = %0d,Y = %0d",D,Y);
+    53                                                       p2_pro:assert property(p2) else $display("p2 is failing,D = %0d,Y = %0d",D,Y);
+    54                                                       p3_pro:assert property(p3) else $display("p3 is failing,D = %0d,Y = %0d",D,Y);
+    55                                                       p4_pro:assert property(p4) else $display("p4 is failing,D = %0d,Y = %0d",D,Y);
+    56                                                       p5_pro:assert property(p5) else $display("p5 is failing,D = %0d,Y = %0d",D,Y);
+    57                                               
+    58                                                       p6_cov:cover property(p6);
+    59                                                       p1_cov:cover property(p1);
+    60                                                       p2_cov:cover property(p2);
+    61                                                       p3_cov:cover property(p3);
+    62                                                       p4_cov:cover property(p4);
+    63                                                       p5_cov:cover property(p5);
+    64                                                   //Test stimulus generation
+    65                                                   initial begin
+    66                                                       assert_reset;
+    67                                                       repeat(100)begin
+    68                                                           D = $random();
+    69                                                           @(negedge clk);
+    70                                                       end
+    71                                                       assert_reset;
+    72                                                       $stop;
+    73                                                   end
+    74                                               
+    75                                                   task assert_reset; 
+    76                                                       rst = 1;
+    77                                                       D = 0;
+    78                                                       @(negedge clk); //here the rst is toggled from 0 to 1 
+    79                                                       rst = 0;        //here the rst is toggled from 1 to 0
+    80                                                   endtask
+    81                                               endmodule
+    3                                                module priority_enc_tb;
+    4                                                    //Signal declaration
+    5                                                    logic clk;
+    6                                                    logic rst;
+    7                                                    logic [3:0]D;
+    8                                                    logic [1:0]Y;   //output
+    9                                                    logic valid;    //output
+    10                                               
+    11                                                   integer error_count = 0;
+    12                                                   integer correct_count = 0;
+    13                                               
+    14                                                   integer i;
+    15                                               
+    16                                                   //module instantiation
+    17                                                   priority_enc DUT(.*);
+    18                                               
+    19                                                   //clock generation
+    20                                                   initial begin
+    21                                                       clk = 0;
+    22                                                       forever 
+    23                                                          #1 clk = ~clk;
+    24                                                   end
+    25                                               
+    26                                               
+    27                                                       property p1;
+    28                                                           @(posedge clk) disable iff (rst)  $onehot(D)|=>valid;
+    29                                                       endproperty
+    30                                               
+    31                                                       property p2;
+    32                                                           @(posedge clk) disable iff (rst)  (D[3:0] == 4'b1000)|=>(Y ==2'b00);
+    33                                                       endproperty
+    34                                               
+    35                                                       property p3;
+    36                                                           @(posedge clk) disable iff (rst)  (D[2:0] == 3'b100)|=>(Y ==2'b01);
+    37                                                       endproperty
+    38                                               
+    39                                                       property p4;
+    40                                                           @(posedge clk) disable iff (rst)  (D[1:0] == 2'b10)|=>(Y ==2'b10);
+    41                                                       endproperty
+    42                                               
+    43                                                       property p5;
+    44                                                           @(posedge clk)  disable iff (rst) (D[0] == 1'b1)|=>(Y ==2'b11);
+    45                                                       endproperty
+    46                                               
+    47                                                       property p6;
+    48                                                           @(posedge clk) (rst) |=> ((Y == 2'b00) && (valid == 1'b0));
+    49                                                       endproperty
+    50                                               
+    51                                                       p6_pro:assert property(p6) else $display("p6 is failing,D = %0d,Y = %0d,valid = %0d",D,Y,valid);
+    52                                                       p1_pro:assert property(p1) else $display("p1 is failing,D = %0d,Y = %0d",D,Y);
+    53                                                       p2_pro:assert property(p2) else $display("p2 is failing,D = %0d,Y = %0d",D,Y);
+    54                                                       p3_pro:assert property(p3) else $display("p3 is failing,D = %0d,Y = %0d",D,Y);
+    55                                                       p4_pro:assert property(p4) else $display("p4 is failing,D = %0d,Y = %0d",D,Y);
+    56                                                       p5_pro:assert property(p5) else $display("p5 is failing,D = %0d,Y = %0d",D,Y);
+    57                                               
+    58                                                       p6_cov:cover property(p6);
+    59                                                       p1_cov:cover property(p1);
+    60                                                       p2_cov:cover property(p2);
+    61                                                       p3_cov:cover property(p3);
+    62                                                       p4_cov:cover property(p4);
+    63                                                       p5_cov:cover property(p5);
+    64                                                   //Test stimulus generation
+    65                                                   initial begin
+    66                                                       assert_reset;
+    67                                                       repeat(100)begin
+    68                                                           D = $random();
+    69                                                           @(negedge clk);
+    70                                                       end
+    71                                                       assert_reset;
+    72                                                       $stop;
+    73                                                   end
+    74                                               
+    75                                                   task assert_reset; 
+    76                                                       rst = 1;
+    77                                                       D = 0;
+    78                                                       @(negedge clk); //here the rst is toggled from 0 to 1 
+    79                                                       rst = 0;        //here the rst is toggled from 1 to 0
+    80                                                   endtask
+    81                                               endmodule
+    3                                                module priority_enc_tb;
+    4                                                    //Signal declaration
+    5                                                    logic clk;
+    6                                                    logic rst;
+    7                                                    logic [3:0]D;
+    8                                                    logic [1:0]Y;   //output
+    9                                                    logic valid;    //output
+    10                                               
+    11                                                   integer error_count = 0;
+    12                                                   integer correct_count = 0;
+    13                                               
+    14                                                   integer i;
+    15                                               
+    16                                                   //module instantiation
+    17                                                   priority_enc DUT(.*);
+    18                                               
+    19                                                   //clock generation
+    20                                                   initial begin
+    21                                                       clk = 0;
+    22                                                       forever 
+    23                                                          #1 clk = ~clk;
+    24                                                   end
+    25                                               
+    26                                               
+    27                                                       property p1;
+    28                                                           @(posedge clk) disable iff (rst)  $onehot(D)|=>valid;
+    29                                                       endproperty
+    30                                               
+    31                                                       property p2;
+    32                                                           @(posedge clk) disable iff (rst)  (D[3:0] == 4'b1000)|=>(Y ==2'b00);
+    33                                                       endproperty
+    34                                               
+    35                                                       property p3;
+    36                                                           @(posedge clk) disable iff (rst)  (D[2:0] == 3'b100)|=>(Y ==2'b01);
+    37                                                       endproperty
+    38                                               
+    39                                                       property p4;
+    40                                                           @(posedge clk) disable iff (rst)  (D[1:0] == 2'b10)|=>(Y ==2'b10);
+    41                                                       endproperty
+    42                                               
+    43                                                       property p5;
+    44                                                           @(posedge clk)  disable iff (rst) (D[0] == 1'b1)|=>(Y ==2'b11);
+    45                                                       endproperty
+    46                                               
+    47                                                       property p6;
+    48                                                           @(posedge clk) (rst) |=> ((Y == 2'b00) && (valid == 1'b0));
+    49                                                       endproperty
+    50                                               
+    51                                                       p6_pro:assert property(p6) else $display("p6 is failing,D = %0d,Y = %0d,valid = %0d",D,Y,valid);
+    52                                                       p1_pro:assert property(p1) else $display("p1 is failing,D = %0d,Y = %0d",D,Y);
+    53                                                       p2_pro:assert property(p2) else $display("p2 is failing,D = %0d,Y = %0d",D,Y);
+    54                                                       p3_pro:assert property(p3) else $display("p3 is failing,D = %0d,Y = %0d",D,Y);
+    55                                                       p4_pro:assert property(p4) else $display("p4 is failing,D = %0d,Y = %0d",D,Y);
+    56                                                       p5_pro:assert property(p5) else $display("p5 is failing,D = %0d,Y = %0d",D,Y);
+    57                                               
+    58                                                       p6_cov:cover property(p6);
+    59                                                       p1_cov:cover property(p1);
+    60                                                       p2_cov:cover property(p2);
+    61                                                       p3_cov:cover property(p3);
+    62                                                       p4_cov:cover property(p4);
+    63                                                       p5_cov:cover property(p5);
+    64                                                   //Test stimulus generation
+    65                                                   initial begin
+    66                                                       assert_reset;
+    67                                                       repeat(100)begin
+    68                                                           D = $random();
+    69                                                           @(negedge clk);
+    70                                                       end
+    71                                                       assert_reset;
+    72                                                       $stop;
+    73                                                   end
+    74                                               
+    75                                                   task assert_reset; 
+    76                                                       rst = 1;
+    77                                                       D = 0;
+    78                                                       @(negedge clk); //here the rst is toggled from 0 to 1 
+    79                                                       rst = 0;        //here the rst is toggled from 1 to 0
+    80                                                   endtask
+    81                                               endmodule
+    3                                                module priority_enc_tb;
+    4                                                    //Signal declaration
+    5                                                    logic clk;
+    6                                                    logic rst;
+    7                                                    logic [3:0]D;
+    8                                                    logic [1:0]Y;   //output
+    9                                                    logic valid;    //output
+    10                                               
+    11                                                   integer error_count = 0;
+    12                                                   integer correct_count = 0;
+    13                                               
+    14                                                   integer i;
+    15                                               
+    16                                                   //module instantiation
+    17                                                   priority_enc DUT(.*);
+    18                                               
+    19                                                   //clock generation
+    20                                                   initial begin
+    21                                                       clk = 0;
+    22                                                       forever 
+    23                                                          #1 clk = ~clk;
+    24                                                   end
+    25                                               
+    26                                               
+    27                                                       property p1;
+    28                                                           @(posedge clk) disable iff (rst)  $onehot(D)|=>valid;
+    29                                                       endproperty
+    30                                               
+    31                                                       property p2;
+    32                                                           @(posedge clk) disable iff (rst)  (D[3:0] == 4'b1000)|=>(Y ==2'b00);
+    33                                                       endproperty
+    34                                               
+    35                                                       property p3;
+    36                                                           @(posedge clk) disable iff (rst)  (D[2:0] == 3'b100)|=>(Y ==2'b01);
+    37                                                       endproperty
+    38                                               
+    39                                                       property p4;
+    40                                                           @(posedge clk) disable iff (rst)  (D[1:0] == 2'b10)|=>(Y ==2'b10);
+    41                                                       endproperty
+    42                                               
+    43                                                       property p5;
+    44                                                           @(posedge clk)  disable iff (rst) (D[0] == 1'b1)|=>(Y ==2'b11);
+    45                                                       endproperty
+    46                                               
+    47                                                       property p6;
+    48                                                           @(posedge clk) (rst) |=> ((Y == 2'b00) && (valid == 1'b0));
+    49                                                       endproperty
+    50                                               
+    51                                                       p6_pro:assert property(p6) else $display("p6 is failing,D = %0d,Y = %0d,valid = %0d",D,Y,valid);
+    52                                                       p1_pro:assert property(p1) else $display("p1 is failing,D = %0d,Y = %0d",D,Y);
+    53                                                       p2_pro:assert property(p2) else $display("p2 is failing,D = %0d,Y = %0d",D,Y);
+    54                                                       p3_pro:assert property(p3) else $display("p3 is failing,D = %0d,Y = %0d",D,Y);
+    55                                                       p4_pro:assert property(p4) else $display("p4 is failing,D = %0d,Y = %0d",D,Y);
+    56                                                       p5_pro:assert property(p5) else $display("p5 is failing,D = %0d,Y = %0d",D,Y);
+    57                                               
+    58                                                       p6_cov:cover property(p6);
+    59                                                       p1_cov:cover property(p1);
+    60                                                       p2_cov:cover property(p2);
+    61                                                       p3_cov:cover property(p3);
+    62                                                       p4_cov:cover property(p4);
+    63                                                       p5_cov:cover property(p5);
+    64                                                   //Test stimulus generation
+    65                                                   initial begin
+    66                                                       assert_reset;
+    67                                                       repeat(100)begin
+    68                                                           D = $random();
+    69                                                           @(negedge clk);
+    70                                                       end
+    71                                                       assert_reset;
+    72                                                       $stop;
+    73                                                   end
+    74                                               
+    75                                                   task assert_reset; 
+    76                                                       rst = 1;
+    77                                                       D = 0;
+    78                                                       @(negedge clk); //here the rst is toggled from 0 to 1 
+    79                                                       rst = 0;        //here the rst is toggled from 1 to 0
+    80                                                   endtask
+    81                                               endmodule
+    3                                                module priority_enc_tb;
+    4                                                    //Signal declaration
+    5                                                    logic clk;
+    6                                                    logic rst;
+    7                                                    logic [3:0]D;
+    8                                                    logic [1:0]Y;   //output
+    9                                                    logic valid;    //output
+    10                                               
+    11                                                   integer error_count = 0;
+    12                                                   integer correct_count = 0;
+    13                                               
+    14                                                   integer i;
+    15                                               
+    16                                                   //module instantiation
+    17                                                   priority_enc DUT(.*);
+    18                                               
+    19                                                   //clock generation
+    20                                                   initial begin
+    21                                                       clk = 0;
+    22                                                       forever 
+    23                                                          #1 clk = ~clk;
+    24                                                   end
+    25                                               
+    26                                               
+    27                                                       property p1;
+    28                                                           @(posedge clk) disable iff (rst)  $onehot(D)|=>valid;
+    29                                                       endproperty
+    30                                               
+    31                                                       property p2;
+    32                                                           @(posedge clk) disable iff (rst)  (D[3:0] == 4'b1000)|=>(Y ==2'b00);
+    33                                                       endproperty
+    34                                               
+    35                                                       property p3;
+    36                                                           @(posedge clk) disable iff (rst)  (D[2:0] == 3'b100)|=>(Y ==2'b01);
+    37                                                       endproperty
+    38                                               
+    39                                                       property p4;
+    40                                                           @(posedge clk) disable iff (rst)  (D[1:0] == 2'b10)|=>(Y ==2'b10);
+    41                                                       endproperty
+    42                                               
+    43                                                       property p5;
+    44                                                           @(posedge clk)  disable iff (rst) (D[0] == 1'b1)|=>(Y ==2'b11);
+    45                                                       endproperty
+    46                                               
+    47                                                       property p6;
+    48                                                           @(posedge clk) (rst) |=> ((Y == 2'b00) && (valid == 1'b0));
+    49                                                       endproperty
+    50                                               
+    51                                                       p6_pro:assert property(p6) else $display("p6 is failing,D = %0d,Y = %0d,valid = %0d",D,Y,valid);
+    52                                                       p1_pro:assert property(p1) else $display("p1 is failing,D = %0d,Y = %0d",D,Y);
+    53                                                       p2_pro:assert property(p2) else $display("p2 is failing,D = %0d,Y = %0d",D,Y);
+    54                                                       p3_pro:assert property(p3) else $display("p3 is failing,D = %0d,Y = %0d",D,Y);
+    55                                                       p4_pro:assert property(p4) else $display("p4 is failing,D = %0d,Y = %0d",D,Y);
+    56                                                       p5_pro:assert property(p5) else $display("p5 is failing,D = %0d,Y = %0d",D,Y);
+    57                                               
+    58                                                       p6_cov:cover property(p6);
+    59                                                       p1_cov:cover property(p1);
+    60                                                       p2_cov:cover property(p2);
+    61                                                       p3_cov:cover property(p3);
+    62                                                       p4_cov:cover property(p4);
+    63                                                       p5_cov:cover property(p5);
+    64                                                   //Test stimulus generation
+    65                                                   initial begin
+    66                                                       assert_reset;
+    67                                                       repeat(100)begin
+    68                                                           D = $random();
+    69                                                           @(negedge clk);
+    70                                                       end
+    71                                                       assert_reset;
+    72                                                       $stop;
+    73                                                   end
+    74                                               
+    75                                                   task assert_reset; 
+    76                                                       rst = 1;
+    77                                                       D = 0;
+    78                                                       @(negedge clk); //here the rst is toggled from 0 to 1 
+    79                                                       rst = 0;        //here the rst is toggled from 1 to 0
+    80                                                   endtask
+    81                                               endmodule
+    3                                                module priority_enc_tb;
+    4                                                    //Signal declaration
+    5                                                    logic clk;
+    6                                                    logic rst;
+    7                                                    logic [3:0]D;
+    8                                                    logic [1:0]Y;   //output
+    9                                                    logic valid;    //output
+    10                                               
+    11                                                   integer error_count = 0;
+    12                                                   integer correct_count = 0;
+    13                                               
+    14                                                   integer i;
+    15                                               
+    16                                                   //module instantiation
+    17                                                   priority_enc DUT(.*);
+    18                                               
+    19                                                   //clock generation
+    20                                                   initial begin
+    21                                                       clk = 0;
+    22                                                       forever 
+    23                                                          #1 clk = ~clk;
+    24                                                   end
+    25                                               
+    26                                               
+    27                                                       property p1;
+    28                                                           @(posedge clk) disable iff (rst)  $onehot(D)|=>valid;
+    29                                                       endproperty
+    30                                               
+    31                                                       property p2;
+    32                                                           @(posedge clk) disable iff (rst)  (D[3:0] == 4'b1000)|=>(Y ==2'b00);
+    33                                                       endproperty
+    34                                               
+    35                                                       property p3;
+    36                                                           @(posedge clk) disable iff (rst)  (D[2:0] == 3'b100)|=>(Y ==2'b01);
+    37                                                       endproperty
+    38                                               
+    39                                                       property p4;
+    40                                                           @(posedge clk) disable iff (rst)  (D[1:0] == 2'b10)|=>(Y ==2'b10);
+    41                                                       endproperty
+    42                                               
+    43                                                       property p5;
+    44                                                           @(posedge clk)  disable iff (rst) (D[0] == 1'b1)|=>(Y ==2'b11);
+    45                                                       endproperty
+    46                                               
+    47                                                       property p6;
+    48                                                           @(posedge clk) (rst) |=> ((Y == 2'b00) && (valid == 1'b0));
+    49                                                       endproperty
+    50                                               
+    51                                                       p6_pro:assert property(p6) else $display("p6 is failing,D = %0d,Y = %0d,valid = %0d",D,Y,valid);
+    52                                                       p1_pro:assert property(p1) else $display("p1 is failing,D = %0d,Y = %0d",D,Y);
+    53                                                       p2_pro:assert property(p2) else $display("p2 is failing,D = %0d,Y = %0d",D,Y);
+    54                                                       p3_pro:assert property(p3) else $display("p3 is failing,D = %0d,Y = %0d",D,Y);
+    55                                                       p4_pro:assert property(p4) else $display("p4 is failing,D = %0d,Y = %0d",D,Y);
+    56                                                       p5_pro:assert property(p5) else $display("p5 is failing,D = %0d,Y = %0d",D,Y);
+    57                                               
+    58                                                       p6_cov:cover property(p6);
+    59                                                       p1_cov:cover property(p1);
+    60                                                       p2_cov:cover property(p2);
+    61                                                       p3_cov:cover property(p3);
+    62                                                       p4_cov:cover property(p4);
+    63                                                       p5_cov:cover property(p5);
+    64                                                   //Test stimulus generation
+    65                                                   initial begin
+    66                                                       assert_reset;
+    67                                                       repeat(100)begin
+    68                                                           D = $random();
+    69                                                           @(negedge clk);
+    70                                                       end
+    71                                                       assert_reset;
+    72                                                       $stop;
+    73                                                   end
+    74                                               
+    75                                                   task assert_reset; 
+    76                                                       rst = 1;
+    77                                                       D = 0;
+    78                                                       @(negedge clk); //here the rst is toggled from 0 to 1 
+    79                                                       rst = 0;        //here the rst is toggled from 1 to 0
+    80                                                   endtask
+    81                                               endmodule
+    3                                                module priority_enc_tb;
+    4                                                    //Signal declaration
+    5                                                    logic clk;
+    6                                                    logic rst;
+    7                                                    logic [3:0]D;
+    8                                                    logic [1:0]Y;   //output
+    9                                                    logic valid;    //output
+    10                                               
+    11                                                   integer error_count = 0;
+    12                                                   integer correct_count = 0;
+    13                                               
+    14                                                   integer i;
+    15                                               
+    16                                                   //module instantiation
+    17                                                   priority_enc DUT(.*);
+    18                                               
+    19                                                   //clock generation
+    20                                                   initial begin
+    21                                                       clk = 0;
+    22                                                       forever 
+    23                                                          #1 clk = ~clk;
+    24                                                   end
+    25                                               
+    26                                               
+    27                                                       property p1;
+    28                                                           @(posedge clk) disable iff (rst)  $onehot(D)|=>valid;
+    29                                                       endproperty
+    30                                               
+    31                                                       property p2;
+    32                                                           @(posedge clk) disable iff (rst)  (D[3:0] == 4'b1000)|=>(Y ==2'b00);
+    33                                                       endproperty
+    34                                               
+    35                                                       property p3;
+    36                                                           @(posedge clk) disable iff (rst)  (D[2:0] == 3'b100)|=>(Y ==2'b01);
+    37                                                       endproperty
+    38                                               
+    39                                                       property p4;
+    40                                                           @(posedge clk) disable iff (rst)  (D[1:0] == 2'b10)|=>(Y ==2'b10);
+    41                                                       endproperty
+    42                                               
+    43                                                       property p5;
+    44                                                           @(posedge clk)  disable iff (rst) (D[0] == 1'b1)|=>(Y ==2'b11);
+    45                                                       endproperty
+    46                                               
+    47                                                       property p6;
+    48                                                           @(posedge clk) (rst) |=> ((Y == 2'b00) && (valid == 1'b0));
+    49                                                       endproperty
+    50                                               
+    51                                                       p6_pro:assert property(p6) else $display("p6 is failing,D = %0d,Y = %0d,valid = %0d",D,Y,valid);
+    52                                                       p1_pro:assert property(p1) else $display("p1 is failing,D = %0d,Y = %0d",D,Y);
+    53                                                       p2_pro:assert property(p2) else $display("p2 is failing,D = %0d,Y = %0d",D,Y);
+    54                                                       p3_pro:assert property(p3) else $display("p3 is failing,D = %0d,Y = %0d",D,Y);
+    55                                                       p4_pro:assert property(p4) else $display("p4 is failing,D = %0d,Y = %0d",D,Y);
+    56                                                       p5_pro:assert property(p5) else $display("p5 is failing,D = %0d,Y = %0d",D,Y);
+    57                                               
+    58                                                       p6_cov:cover property(p6);
+    59                                                       p1_cov:cover property(p1);
+    60                                                       p2_cov:cover property(p2);
+    61                                                       p3_cov:cover property(p3);
+    62                                                       p4_cov:cover property(p4);
+    63                                                       p5_cov:cover property(p5);
+    64                                                   //Test stimulus generation
+    65                                                   initial begin
+    66                                                       assert_reset;
+    67                                                       repeat(100)begin
+    68                                                           D = $random();
+    69                                                           @(negedge clk);
+    70                                                       end
+    71                                                       assert_reset;
+    72                                                       $stop;
+    73                                                   end
+    74                                               
+    75                                                   task assert_reset; 
+    76                                                       rst = 1;
+    77                                                       D = 0;
+    78                                                       @(negedge clk); //here the rst is toggled from 0 to 1 
+    79                                                       rst = 0;        //here the rst is toggled from 1 to 0
+    80                                                   endtask
+    81                                               endmodule
+    3                                                module priority_enc_tb;
+    4                                                    //Signal declaration
+    5                                                    logic clk;
+    6                                                    logic rst;
+    7                                                    logic [3:0]D;
+    8                                                    logic [1:0]Y;   //output
+    9                                                    logic valid;    //output
+    10                                               
+    11                                                   integer error_count = 0;
+    12                                                   integer correct_count = 0;
+    13                                               
+    14                                                   integer i;
+    15                                               
+    16                                                   //module instantiation
+    17                                                   priority_enc DUT(.*);
+    18                                               
+    19                                                   //clock generation
+    20                                                   initial begin
+    21                                                       clk = 0;
+    22                                                       forever 
+    23                                                          #1 clk = ~clk;
+    24                                                   end
+    25                                               
+    26                                               
+    27                                                       property p1;
+    28                                                           @(posedge clk) disable iff (rst)  $onehot(D)|=>valid;
+    29                                                       endproperty
+    30                                               
+    31                                                       property p2;
+    32                                                           @(posedge clk) disable iff (rst)  (D[3:0] == 4'b1000)|=>(Y ==2'b00);
+    33                                                       endproperty
+    34                                               
+    35                                                       property p3;
+    36                                                           @(posedge clk) disable iff (rst)  (D[2:0] == 3'b100)|=>(Y ==2'b01);
+    37                                                       endproperty
+    38                                               
+    39                                                       property p4;
+    40                                                           @(posedge clk) disable iff (rst)  (D[1:0] == 2'b10)|=>(Y ==2'b10);
+    41                                                       endproperty
+    42                                               
+    43                                                       property p5;
+    44                                                           @(posedge clk)  disable iff (rst) (D[0] == 1'b1)|=>(Y ==2'b11);
+    45                                                       endproperty
+    46                                               
+    47                                                       property p6;
+    48                                                           @(posedge clk) (rst) |=> ((Y == 2'b00) && (valid == 1'b0));
+    49                                                       endproperty
+    50                                               
+    51                                                       p6_pro:assert property(p6) else $display("p6 is failing,D = %0d,Y = %0d,valid = %0d",D,Y,valid);
+    52                                                       p1_pro:assert property(p1) else $display("p1 is failing,D = %0d,Y = %0d",D,Y);
+    53                                                       p2_pro:assert property(p2) else $display("p2 is failing,D = %0d,Y = %0d",D,Y);
+    54                                                       p3_pro:assert property(p3) else $display("p3 is failing,D = %0d,Y = %0d",D,Y);
+    55                                                       p4_pro:assert property(p4) else $display("p4 is failing,D = %0d,Y = %0d",D,Y);
+    56                                                       p5_pro:assert property(p5) else $display("p5 is failing,D = %0d,Y = %0d",D,Y);
+    57                                               
+    58                                                       p6_cov:cover property(p6);
+    59                                                       p1_cov:cover property(p1);
+    60                                                       p2_cov:cover property(p2);
+    61                                                       p3_cov:cover property(p3);
+    62                                                       p4_cov:cover property(p4);
+    63                                                       p5_cov:cover property(p5);
+    64                                                   //Test stimulus generation
+    65                                                   initial begin
+    66                                                       assert_reset;
+    67                                                       repeat(100)begin
+    68                                                           D = $random();
+    69                                                           @(negedge clk);
+    70                                                       end
+    71                                                       assert_reset;
+    72                                                       $stop;
+    73                                                   end
+    74                                               
+    75                                                   task assert_reset; 
+    76                                                       rst = 1;
+    77                                                       D = 0;
+    78                                                       @(negedge clk); //here the rst is toggled from 0 to 1 
+    79                                                       rst = 0;        //here the rst is toggled from 1 to 0
+    80                                                   endtask
+    81                                               endmodule
+    3                                                module priority_enc_tb;
+    4                                                    //Signal declaration
+    5                                                    logic clk;
+    6                                                    logic rst;
+    7                                                    logic [3:0]D;
+    8                                                    logic [1:0]Y;   //output
+    9                                                    logic valid;    //output
+    10                                               
+    11                                                   integer error_count = 0;
+    12                                                   integer correct_count = 0;
+    13                                               
+    14                                                   integer i;
+    15                                               
+    16                                                   //module instantiation
+    17                                                   priority_enc DUT(.*);
+    18                                               
+    19                                                   //clock generation
+    20                                                   initial begin
+    21                                                       clk = 0;
+    22                                                       forever 
+    23                                                          #1 clk = ~clk;
+    24                                                   end
+    25                                               
+    26                                               
+    27                                                       property p1;
+    28                                                           @(posedge clk) disable iff (rst)  $onehot(D)|=>valid;
+    29                                                       endproperty
+    30                                               
+    31                                                       property p2;
+    32                                                           @(posedge clk) disable iff (rst)  (D[3:0] == 4'b1000)|=>(Y ==2'b00);
+    33                                                       endproperty
+    34                                               
+    35                                                       property p3;
+    36                                                           @(posedge clk) disable iff (rst)  (D[2:0] == 3'b100)|=>(Y ==2'b01);
+    37                                                       endproperty
+    38                                               
+    39                                                       property p4;
+    40                                                           @(posedge clk) disable iff (rst)  (D[1:0] == 2'b10)|=>(Y ==2'b10);
+    41                                                       endproperty
+    42                                               
+    43                                                       property p5;
+    44                                                           @(posedge clk)  disable iff (rst) (D[0] == 1'b1)|=>(Y ==2'b11);
+    45                                                       endproperty
+    46                                               
+    47                                                       property p6;
+    48                                                           @(posedge clk) (rst) |=> ((Y == 2'b00) && (valid == 1'b0));
+    49                                                       endproperty
+    50                                               
+    51                                                       p6_pro:assert property(p6) else $display("p6 is failing,D = %0d,Y = %0d,valid = %0d",D,Y,valid);
+    52                                                       p1_pro:assert property(p1) else $display("p1 is failing,D = %0d,Y = %0d",D,Y);
+    53                                                       p2_pro:assert property(p2) else $display("p2 is failing,D = %0d,Y = %0d",D,Y);
+    54                                                       p3_pro:assert property(p3) else $display("p3 is failing,D = %0d,Y = %0d",D,Y);
+    55                                                       p4_pro:assert property(p4) else $display("p4 is failing,D = %0d,Y = %0d",D,Y);
+    56                                                       p5_pro:assert property(p5) else $display("p5 is failing,D = %0d,Y = %0d",D,Y);
+    57                                               
+    58                                                       p6_cov:cover property(p6);
+    59                                                       p1_cov:cover property(p1);
+    60                                                       p2_cov:cover property(p2);
+    61                                                       p3_cov:cover property(p3);
+    62                                                       p4_cov:cover property(p4);
+    63                                                       p5_cov:cover property(p5);
+    64                                                   //Test stimulus generation
+    65                                                   initial begin
+    66                                                       assert_reset;
+    67                                                       repeat(100)begin
+    68                                                           D = $random();
+    69                                                           @(negedge clk);
+    70                                                       end
+    71                                                       assert_reset;
+    72                                                       $stop;
+    73                                                   end
+    74                                               
+    75                                                   task assert_reset; 
+    76                                                       rst = 1;
+    77                                                       D = 0;
+    78                                                       @(negedge clk); //here the rst is toggled from 0 to 1 
+    79                                                       rst = 0;        //here the rst is toggled from 1 to 0
+    80                                                   endtask
+    81                                               endmodule
+    3                                                module priority_enc_tb;
+    4                                                    //Signal declaration
+    5                                                    logic clk;
+    6                                                    logic rst;
+    7                                                    logic [3:0]D;
+    8                                                    logic [1:0]Y;   //output
+    9                                                    logic valid;    //output
+    10                                               
+    11                                                   integer error_count = 0;
+    12                                                   integer correct_count = 0;
+    13                                               
+    14                                                   integer i;
+    15                                               
+    16                                                   //module instantiation
+    17                                                   priority_enc DUT(.*);
+    18                                               
+    19                                                   //clock generation
+    20                                                   initial begin
+    21                                                       clk = 0;
+    22                                                       forever 
+    23                                                          #1 clk = ~clk;
+    24                                                   end
+    25                                               
+    26                                               
+    27                                                       property p1;
+    28                                                           @(posedge clk) disable iff (rst)  $onehot(D)|=>valid;
+    29                                                       endproperty
+    30                                               
+    31                                                       property p2;
+    32                                                           @(posedge clk) disable iff (rst)  (D[3:0] == 4'b1000)|=>(Y ==2'b00);
+    33                                                       endproperty
+    34                                               
+    35                                                       property p3;
+    36                                                           @(posedge clk) disable iff (rst)  (D[2:0] == 3'b100)|=>(Y ==2'b01);
+    37                                                       endproperty
+    38                                               
+    39                                                       property p4;
+    40                                                           @(posedge clk) disable iff (rst)  (D[1:0] == 2'b10)|=>(Y ==2'b10);
+    41                                                       endproperty
+    42                                               
+    43                                                       property p5;
+    44                                                           @(posedge clk)  disable iff (rst) (D[0] == 1'b1)|=>(Y ==2'b11);
+    45                                                       endproperty
+    46                                               
+    47                                                       property p6;
+    48                                                           @(posedge clk) (rst) |=> ((Y == 2'b00) && (valid == 1'b0));
+    49                                                       endproperty
+    50                                               
+    51                                                       p6_pro:assert property(p6) else $display("p6 is failing,D = %0d,Y = %0d,valid = %0d",D,Y,valid);
+    52                                                       p1_pro:assert property(p1) else $display("p1 is failing,D = %0d,Y = %0d",D,Y);
+    53                                                       p2_pro:assert property(p2) else $display("p2 is failing,D = %0d,Y = %0d",D,Y);
+    54                                                       p3_pro:assert property(p3) else $display("p3 is failing,D = %0d,Y = %0d",D,Y);
+    55                                                       p4_pro:assert property(p4) else $display("p4 is failing,D = %0d,Y = %0d",D,Y);
+    56                                                       p5_pro:assert property(p5) else $display("p5 is failing,D = %0d,Y = %0d",D,Y);
+    57                                               
+    58                                                       p6_cov:cover property(p6);
+    59                                                       p1_cov:cover property(p1);
+    60                                                       p2_cov:cover property(p2);
+    61                                                       p3_cov:cover property(p3);
+    62                                                       p4_cov:cover property(p4);
+    63                                                       p5_cov:cover property(p5);
+    64                                                   //Test stimulus generation
+    65                                                   initial begin
+    66                                                       assert_reset;
+    67                                                       repeat(100)begin
+    68                                                           D = $random();
+    69                                                           @(negedge clk);
+    70                                                       end
+    71                                                       assert_reset;
+    72                                                       $stop;
+    73                                                   end
+    74                                               
+    75                                                   task assert_reset; 
+    76                                                       rst = 1;
+    77                                                       D = 0;
+    78                                                       @(negedge clk); //here the rst is toggled from 0 to 1 
+    79                                                       rst = 0;        //here the rst is toggled from 1 to 0
+    80                                                   endtask
+    81                                               endmodule
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         82        18        64    21.95%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /priority_enc_tb --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                            D[0-3]           1           1      100.00 
+                                            Y[0-1]           1           1      100.00 
+                                               clk           1           1      100.00 
+                                           i[0-31]           0           0        0.00 
+                                               rst           1           1      100.00 
+                                             valid           1           1      100.00 
+
+Total Node Count     =         41 
+Toggled Node Count   =          9 
+Untoggled Node Count =         32 
+
+Toggle Coverage      =      21.95% (18 of 82 bins)
+
+
+DIRECTIVE COVERAGE:
+--------------------------------------------------------------------------------------------
+Name                                     Design Design   Lang File(Line)      Hits Status    
+                                         Unit   UnitType                                     
+--------------------------------------------------------------------------------------------
+/priority_enc_tb/p6_cov                  priority_enc_tb Verilog  SVA  priority_enc_tb.sv(59)
+                                                                                 1 Covered   
+/priority_enc_tb/p1_cov                  priority_enc_tb Verilog  SVA  priority_enc_tb.sv(60)
+                                                                                20 Covered   
+/priority_enc_tb/p2_cov                  priority_enc_tb Verilog  SVA  priority_enc_tb.sv(61)
+                                                                                 5 Covered   
+/priority_enc_tb/p3_cov                  priority_enc_tb Verilog  SVA  priority_enc_tb.sv(62)
+                                                                                 8 Covered   
+/priority_enc_tb/p4_cov                  priority_enc_tb Verilog  SVA  priority_enc_tb.sv(63)
+                                                                                27 Covered   
+/priority_enc_tb/p5_cov                  priority_enc_tb Verilog  SVA  priority_enc_tb.sv(64)
+                                                                                56 Covered   
+
+TOTAL DIRECTIVE COVERAGE: 100.00%  COVERS: 6
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/priority_enc_tb/p6_pro
+                     priority_enc_tb.sv(52)             0          1
+/priority_enc_tb/p1_pro
+                     priority_enc_tb.sv(53)             0          1
+/priority_enc_tb/p2_pro
+                     priority_enc_tb.sv(54)             0          1
+/priority_enc_tb/p3_pro
+                     priority_enc_tb.sv(55)             0          1
+/priority_enc_tb/p4_pro
+                     priority_enc_tb.sv(56)             0          1
+/priority_enc_tb/p5_pro
+                     priority_enc_tb.sv(57)             0          1
+
+Total Coverage By Instance (filtered view): 87.20%
+

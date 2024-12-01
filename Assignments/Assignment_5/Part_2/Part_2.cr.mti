@@ -1,0 +1,58 @@
+{D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/alsu_test.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/alsu_test.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package alsu_test_pkg
+-- Importing package alsu_env_pkg
+-- Importing package ALSU_pkg_driver
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/alsu_test.sv(7): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} {D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/ALSU_driver.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/ALSU_driver.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package ALSU_pkg_driver
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/ALSU_driver.sv(5): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} {D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/alsu_env.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/alsu_env.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling package alsu_env_pkg
+-- Importing package ALSU_pkg_driver
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/alsu_env.sv(7): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} {D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/ALSU_interface.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/ALSU_interface.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling interface ALSU_interface
+
+Top level modules:
+	--none--
+
+} {} {}} {D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/ALSU.v} {1 {vlog -work work -vopt -stats=none {D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/ALSU.v}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module ALSU
+
+Top level modules:
+	ALSU
+
+} {} {}} {D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/ALSU_top.sv} {1 {vlog -work work -vopt -sv -stats=none {D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/ALSU_top.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+** Note: (vlog-2286) D:/Digital Design/KW Course/Verification/VF.session 5/Assignment_5/Part_2/ALSU_top.sv(4): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package ALSU_top_sv_unit
+-- Importing package alsu_test_pkg
+-- Importing package alsu_env_pkg
+-- Importing package ALSU_pkg_driver
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Compiling module ALSU_top
+
+Top level modules:
+	ALSU_top
+
+} {} {}}
